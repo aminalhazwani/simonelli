@@ -1,3 +1,6 @@
 [submodule "kirbycms"]
 	path = kirbycms
 	url = git://github.com/bastianallgeier/kirbycms.git
+[submodule "theme/baseblog"]
+	path = theme/baseblog
+	url = git://github.com/sashtown/Baseblog-Kirby-Theme.git
