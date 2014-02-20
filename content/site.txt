@@ -1,9 +1,9 @@
-Title: Kirby
+Title: Simone Simonelli
 ----
-Author: Bastian Allgeier
+Author: Amin Al Hazwani
 ----
-Description: Kirby is awesome
+Description: Product design and art direction
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
+Keywords: design, product, research, fabrication, arduino
 ----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)
+Copyright: © 2006-(date: Year) (link: http://simonesimonelli.it text: Simone Simonelli)

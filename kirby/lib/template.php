@@ -36,6 +36,8 @@ class tpl {
     require($file);
     return content::end($return); 
   }
-
 }
+
+
+
 
