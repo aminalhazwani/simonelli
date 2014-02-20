@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://kirby.home.dev/');
+c::set('url', 'http://simonelli.home.dev/');
 
 
 /* 
