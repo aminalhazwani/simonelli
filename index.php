@@ -28,7 +28,7 @@ server
 
 */
 
-$rootKirby = $root . 'kirbycms/kirby';
+$rootKirby = $root . '/kirby';
 
 
 
@@ -44,7 +44,7 @@ directory by default, but you can move it if you want.
 
 */
 
-$rootSite = $root . '/theme/baseblog/site';
+$rootSite = $root . '/site';
 
 
 
