@@ -1,7 +1,8 @@
 <nav class="menu">
   <ul>
-    <?php foreach($pages->visible() AS $p): ?>
-    <li><a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a></li>
-    <?php endforeach ?>
+  	<li><a href="#" data-filter=".project">project</a></li>
+  	<li><a href="#" data-filter=".academics">academics</a></li>
+  	<li><a href="#">about</a></li>
+  	<li><a href="#">contact</a></li>
   </ul>
 </nav>
