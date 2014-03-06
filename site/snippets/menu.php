@@ -1,8 +1,6 @@
-<nav class="menu">
-  <ul>
-  	<li><a href="#" data-filter=".project">project</a></li>
-  	<li><a href="#" data-filter=".academics">academics</a></li>
-  	<li><a href="#">about</a></li>
-  	<li><a href="#">contact</a></li>
-  </ul>
-</nav>
+<div class="menu">
+	<a href="#" data-filter=".project">project</a>
+	<a href="#" data-filter=".academics">education</a>
+	<a href="#" data-filter=".news">news</a>
+	<a href="#">info</a>
+</div>

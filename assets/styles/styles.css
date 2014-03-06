@@ -13,7 +13,6 @@ body {
   line-height: 26px;
   background: #fff;
   color: #777;
-  width: 450px;
   margin: 50px auto;
 }
 a {
@@ -95,4 +94,29 @@ footer a {
 }
 footer a:hover {
   color: #222;
+}
+
+/*isotope*/
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
 }
