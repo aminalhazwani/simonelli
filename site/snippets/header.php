@@ -8,15 +8,13 @@
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
   <meta name="robots" content="index, follow" />
 
-  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-  <?php echo js('assets/js/jquery.isotope.js') ?>
-
   <?php echo css('assets/styles/styles.css') ?>
+  <?php echo css('assets/styles/masonry.css') ?>
 
 </head>
 
 <body>
 
   <header>
-    <a data-filter="*" href="<?php echo url() ?>"><?php echo html($site->title()) ?></a>
+    <a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a>
   </header> 

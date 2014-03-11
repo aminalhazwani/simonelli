@@ -1,11 +1,17 @@
-<?php 
-	snippet('header');
-	snippet('menu');
-	snippet('submenu');
+<?php snippet('header') ?>
 
-	foreach($pages->visible() as $section) {
-  		snippet($section->uid(), array('data' => $section));
-	}
-		
-	snippet('footer');
-?>
+<?php snippet('menu') ?>
+
+<div id="wrapper">
+	<ul id="list">
+		<?php 
+
+			foreach($pages->visible() as $section) {
+				  snippet($section->uid(), array('data' => $section));
+			}
+
+		?>
+	</ul>
+</div>
+
+<?php snippet('footer') ?>

@@ -1,7 +1,0 @@
-Title: about
-----
-Text:
-
-Simone Simonelli (Ascoli Piceno, 1980) studied Industrial Design at the Politecnico di Milano and at the Brunel University in London. He is actively involved in the field of design since 2003. In 2007 with the Industreal collective he won the Wallpaper Award for the Best Debut Collection, with a project investigating the power of digital fabrication. In 2009 he was selected by the German Design Council as one of the 30 best young professionals between Belgium, Italy and Germany. In 2010 he received an honourable mention at the prestigious Promosedia International Award.
-Since 2009 he has been a researcher at the Faculty of Design and Art of the Free University of Bozen-Bolzano, where he also is lecturer of Digital Model Making. His research interests focus on computer aided design, rapid prototyping and rapid manufacturing. He is interested in experimenting with the opportunities offered by new technologies for digital manufacturing, especially in connection with local crafts. In the 2012 he was asked to participate in the project Analogico/Digitale, curated by Stefano Maffei and Stefano Micelli (author of the book Futuro Artigiano).
-

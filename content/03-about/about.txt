@@ -1,8 +1,4 @@
-Title: contact
+Title: About
 ----
-address: via venezia 44, 39100 Bozen
-----
-phone: +39 0471 015246 
-----
-email: studio@simonesimonelli.it
+text: some random text
 ----
