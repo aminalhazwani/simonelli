@@ -22,6 +22,16 @@
 	    });
 	});
 
+	$('#list').isotope({
+		getSortData : {
+			date : function ( $elem ) {
+				return $elem.find('.time').attr('date-time');
+			}
+		},
+		sortBy : 'date',
+		sortAscending : false
+	});
+
 	</script>
 
 </body>

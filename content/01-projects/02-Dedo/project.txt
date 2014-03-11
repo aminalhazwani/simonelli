@@ -4,6 +4,8 @@ tags: maybe, some additional, tags
 ----
 year: 2013
 ----
+date: 08/21/2013
+----
 category: project
 ----
 manufacter: Miniforms
