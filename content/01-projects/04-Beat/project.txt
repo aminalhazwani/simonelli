@@ -2,9 +2,18 @@ title: Beat
 ----
 tags: maybe, some additional, tags
 ----
-year: 2013
+date: 05/22/2013
+----
+branch: work
+----
+category: product
 ----
 manufacter: Gibas
 ----
-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
-
+photo:
+----
+materials: some, nice, new, materials
+----
+text: Beat is a complete lighting, ceiling and wall system.
+Beat is a rhythm lamp!
+Thanks to its infinite compositions becomes flexible to adapt to any situation, such as offices, libraries and local leisure, or in private. It offers significant advantages in terms of energy savings through the use of modules LED with high luminous efficiency. Each module is powered by a driver 350mA that develops about 600 lumens, with an absorption of about 5 watts and 4000K color temperature approx. A handy cable allows easy replacement of electronic components on a par with conventional bulbs, providing the maximum life of the unit. The speakers, steel and satin methacrylate, can be rotated by 360 with double light emission.

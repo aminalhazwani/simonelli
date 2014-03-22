@@ -2,13 +2,20 @@ title: Lungomare Gasthaus
 ----
 tags: maybe, some additional, tags
 ----
-year: 2014
+date: 08/22/2013
 ----
-date: 08/22/2014
+branch: work
 ----
-category: project
+category: exhibit
 ----
-manufacter: 
+manufacter: Lungomare
 ----
-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+photo:
+----
+materials: some, nice, new, materials
+----
+text: In June 2013, to celebrate the tenth-year anniversary of its founding, the project space Lungomare opened the Lungomare Gasthaus as a temporary space for thought and action. The Lungomare Gasthaus integrated the kitchen, a cultural and social place of production, with a one-month program consisting of discussions, conversations and workshops, a series of spatial interventions, a film program and a series of public performances and actions in the city of Bolzano.
 
+I've been asked to design seats and tables for the temporary restaurant!
+
+The furniture were build then in a open workshop of 2 days, where a lot of people came to help us!

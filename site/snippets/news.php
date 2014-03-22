@@ -1,9 +1,9 @@
 <?php foreach($data->children()->visible() as $news): ?>
-	<li class="item">
+	<div class="item <?php echo html($news->category()) ?>">
 		<a href="<?php echo $news->url() ?>">
-			<data class="time" date-time="<?php echo $news->date('c') ?>"><?php echo $news->date('c') ?></data>
+			<data class="date" date-time="<?php echo $news->date('c') ?>"><?php echo $news->date('l j F Y') ?></data>
 			<h1><?php echo html($news->title()) ?></h1>
-			<p><?php echo html($news->meta())?></p>
+			<p><?php echo excerpt($news->text(), 300) ?></p>
 		</a>
-	</li>
+	</div>
 <?php endforeach ?>

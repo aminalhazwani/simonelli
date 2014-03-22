@@ -7,28 +7,42 @@
 
 	<script type="text/javascript">
 
-	$( window ).load( function()
-	{
-	    var columns    = 3,
-	        setColumns = function() { columns = $( window ).width() > 640 ? 3 : $( window ).width() > 320 ? 2 : 1; };
-	 
-	    setColumns();
-	    $( window ).resize( setColumns );
-	 
-	    $( '#list' ).isotope(
-	    {
-	        itemSelector: '.item',
-	        columnWidth:  function( containerWidth ) { return containerWidth / columns; }
-	    });
+	$(window).load(function(){
+    var $container = $('#list');
+
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: true
+        }
+    });
+ 
+    $('.menu .selector').click(function(){
+        $('.menu .current').removeClass('current');
+        $(this).addClass('current');
+ 
+	        var selector = $(this).attr('data-filter');
+	        $container.isotope({
+	            filter: selector,
+	            animationOptions: {
+	                duration: 750,
+	                easing: 'linear',
+	                queue: false
+	            }
+	         });
+	         return false;
+	    }); 
 	});
 
-	$('#list').isotope({
+	$container.isotope({
 		getSortData : {
-			date : function ( $elem ) {
-				return $elem.find('.time').attr('date-time');
+			bydate : function ( $elem ) {
+				return $elem.find('.meta data').attr('date-time');
 			}
 		},
-		sortBy : 'date',
+		sortBy : 'bydate',
 		sortAscending : false
 	});
 

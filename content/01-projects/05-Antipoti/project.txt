@@ -2,9 +2,19 @@ title: Antipodi
 ----
 tags: maybe, some additional, tags
 ----
-year: 2012
+date: 08/22/2012
 ----
-manufacter: 
+branch: work
 ----
-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+category: product
+----
+manufacter: Analogico/Digitale
+----
+photo: Federico Villa
+----
+materials: some, nice, new, materials
+----
+text: Antipodi is a collection of mirrors that links traditional production processes with digital ones. All the visible joints of the wooden frames are produced by 3D printing. Traditional plugs are transformed into independent and multifunctional object, thanks to a technology that allows to print mechanical parts without any further manufacturing.
+Antipodi were presented for the exhibition ANALOGICO/DIGITALE, STORIE DI MAKING DI ARTIGIANI + FABBER + DESIGNER, curated by STEFANO MAFFEI and STEFANO MICELLI. The Exhibition was featuring works of Massimiliano Adami, Antonio Cos, Francesco Faccin, Andrea Gianni, Alessandro Marelli, Simone Simonelli, Paolo Ulian.
+ANALOGICO/DIGITALE is a meeting between artisans businesses, designers and fablab to create a culture of original and local making. New connections and new ways of working are producing experimental results, full of manufacturing quality, savoir faire and hacker spirit of discovery.
 

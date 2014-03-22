@@ -1,10 +1,18 @@
-title: Lungomare Gasthaus
+title: Insetti toccare per credere
 ----
 tags: maybe, some additional, tags
 ----
-year: 2009
+date: 06/22/2011
 ----
-manufacter: 
+branch: work
 ----
-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+category: product
+----
+manufacter: Valcucine
+----
+photo: 
+----
+materials: some, nice, new, materials
+----
+text: Last October the Valcucine Showroom in Brera, Milan hosted an exhibition about one of the plants least know inhabitants: Insects. The cultural event: Insect, Seeing is believing was dedicated specifically to children, yet open to anybody interested in the fascinating world of insects. More than two hundred children participated, during the three days. Interacting with the four mobile terrariums designed and manufactured for the event. For many years now, Valcucine through it's Eco Bookshop in Brera/Milano has been committed to promoting and stimulating environmental awareness, by organizing seminars and sponsoring exhibitions. The four display cases designed by Stefano Citi and Simone Simonelli were conceived as mobile islands, which allowed kids to approach insects from a different point of view. The two designers carefully combined and tailored the modules to meet the needs of three separate entities - Valcucine's need for aesthetic identity, children's need to learn and explore and above all the complex need of all the different species of insects, inhabiting the terrariums. The display cases look like miniature transparent architectures, which offer uncommon points of view for insect observation. They also have simple and intuitive gears that encourage the observers to interact with the insects, without harming
 

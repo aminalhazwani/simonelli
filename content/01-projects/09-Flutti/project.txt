@@ -1,10 +1,20 @@
-title: Lungomare Gasthaus
+title: Flutti
 ----
 tags: maybe, some additional, tags
 ----
-year: 2009
+date: 05/22/2011
 ----
-manufacter: 
+branch: work
 ----
-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+category: product
+----
+manufacter: Gibas
+----
+photo: 
+----
+materials: some, nice, new, materials
+----
+text: Flutti was presented during Euroluce 2011.
+Flutti is a collection of suspending and wall lamps.
+The collection is made by metal sheets fot the italian company Gibas-Fabbrica Artigiana Lampadari, which combines in his production italian craft and new technologies. The collection presents a family of suspending lamps and a family of wall lamps in 3 different sizes. All the lamps are made by calendered metal sheets, sheets are multiple and interchangeable to obtain different color combinations.
 

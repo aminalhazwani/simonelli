@@ -9,7 +9,6 @@
   <meta name="robots" content="index, follow" />
 
   <?php echo css('assets/styles/styles.css') ?>
-  <?php echo css('assets/styles/masonry.css') ?>
 
 </head>
 
@@ -17,4 +16,12 @@
 
   <header>
     <a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a>
-  </header> 
+
+    <div class="menu">
+      <a class="selector" href="<?php echo url() ?>" data-filter=".work">work</a>
+      <a class="selector" href="<?php echo url() ?>" data-filter=".education">education</a>
+      <a href="<?php echo url() ?>about">about</a>
+      <a href="<?php echo url() ?>news">news</a>
+    </div>
+
+  </header>
