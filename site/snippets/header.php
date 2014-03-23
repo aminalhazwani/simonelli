@@ -18,8 +18,8 @@
     <a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a>
 
     <div class="menu">
-      <a class="selector" href="<?php echo url() ?>" data-filter=".work">work</a>
-      <a class="selector" href="<?php echo url() ?>" data-filter=".education">education</a>
+      <a class="filter" href="<?php echo url() ?>" data-filter=".work">work</a>
+      <a class="filter" href="<?php echo url() ?>" data-filter=".education">education</a>
       <a href="<?php echo url() ?>about">about</a>
       <a href="<?php echo url() ?>news">news</a>
     </div>
