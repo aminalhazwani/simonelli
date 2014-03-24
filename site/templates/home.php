@@ -10,7 +10,7 @@ Simone Simonelli is a multidisciplinary designer crossing his activities between
 	class="js-isotope" 
 	data-isotope-options='{ 
 		"itemSelector": ".item",
-		"cellsByColumn": { "columnWidth": ".news" } 
+		"cellsByColumn": { "columnWidth": ".item" } 
 	}'>
 
 	<?php 
@@ -18,6 +18,7 @@ Simone Simonelli is a multidisciplinary designer crossing his activities between
 			snippet($section->uid(), array('data' => $section));
 		}
 	?>
+	
 </div>
 
 <?php snippet('footer') ?>
