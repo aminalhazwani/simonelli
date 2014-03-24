@@ -1,6 +1,4 @@
 Title: Home
 ----
-Subtitle: I am a subtitle
-----
 Text: Simone Simonelli is a multidisciplinary designer crossing his activities between practice and educational activity (da defiinire). Praesent commodo cursus magna, vel scelerisque nisl
 ----

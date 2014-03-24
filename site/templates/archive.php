@@ -4,8 +4,11 @@
 <b>Titolo e testi</b>
 <p><?php echo $page->title() ?></p>
 
+<b>Selected Online Press</b>
+
+
 <b>Last three news</b>
-<?php foreach($page->children()->visible()->flip() as $article): ?>
+<?php foreach($page->children()->visible()->flip()->limit(5) as $article): ?>
   
 	<article>
 		<p><?php echo $article->date('l j F Y') ?></p>
