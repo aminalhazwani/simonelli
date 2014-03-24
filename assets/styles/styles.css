@@ -141,10 +141,6 @@ div.work{
   margin: 20px;
 }
 
-img{
-  width: 200px;
-}
-
 div.meta{
   float: left;
   text-align: right;
@@ -164,6 +160,15 @@ div.meta{
   -webkit-transform: rotate(-90deg); Opera, Chrome, and Safari */
 }
 
+.item figure img{
+  width: 200px;
+}
+
 figure{
   float: right;
+}
+
+b{
+  color: blue;
+  font-size: 1em;
 }

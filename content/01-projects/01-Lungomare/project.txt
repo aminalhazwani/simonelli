@@ -10,7 +10,7 @@ category: exhibit
 ----
 manufacter: Lungomare
 ----
-photo:
+photo: Curzio Castellan
 ----
 materials: some, nice, new, materials
 ----

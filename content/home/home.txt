@@ -2,9 +2,5 @@ Title: Home
 ----
 Subtitle: I am a subtitle
 ----
-
-Text: 
-
-My name is Simone Simonelli and I’m a freelance product designer and fellow researcher in digital fabrication @unibz. My competences ﬂow from [product design](#), [exhibit design](#) and [rapid prototyping](#).
-
+Text: Simone Simonelli is a multidisciplinary designer crossing his activities between practice and educational activity (da defiinire). Praesent commodo cursus magna, vel scelerisque nisl
 ----

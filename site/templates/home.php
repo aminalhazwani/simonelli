@@ -2,9 +2,7 @@
 
 <?php snippet('menu') ?>
 
-<p>
-Simone Simonelli is a multidisciplinary designer crossing his activities between practice and educational activity (da defiinire). Praesent commodo cursus magna, vel scelerisque nisl
-</p>
+<p><?php echo kirbytext($page->text()) ?></p>
 
 <div id="wrapper" 
 	class="js-isotope" 
@@ -18,7 +16,7 @@ Simone Simonelli is a multidisciplinary designer crossing his activities between
 			snippet($section->uid(), array('data' => $section));
 		}
 	?>
-	
+
 </div>
 
 <?php snippet('footer') ?>
