@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+  .main{
+    .title{
+    margin-left: 30%;
+    }
+    article {
+        float: right;
+        width: 70%;
+    }
+    aside {
+        float: left;
+        width: 28%;
+        &.fixed{
+
+        }
+    }
+  } 
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+}

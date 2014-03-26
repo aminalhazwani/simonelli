@@ -1,10 +1,11 @@
-	<div class="footer-container">
-	    <footer class="wrapper">
-	        <?php echo kirbytext($site->copyright()) ?>
-	        <span>Back to top</span>
-	    </footer>
-	</div>
-</div>
+    	</div>
+        <div class="footer-container">
+    	    <footer class="wrapper">
+    	        <?php echo kirbytext($site->copyright()) ?>
+    	        <span>Back to top</span>
+    	    </footer>
+    	</div>
+    </div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

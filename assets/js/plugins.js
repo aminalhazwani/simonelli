@@ -15,4 +15,14 @@ $(document).ready(function () {
         return false;
     });
 
+
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 90) {
+            $('aside').addClass('fixed');
+        }
+        else {
+            $('aside').removeClass('fixed');
+        }
+    });
+
 });

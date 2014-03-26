@@ -1,31 +1,42 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
 
-<b>Titolo e testi</b>
-<p><?php echo $page->title() ?></p>
-<p><?php echo kirbytext($page->text()) ?></p>
+	<h1 class="title"><?php echo $page->title() ?></h1>
+	
+	<article>
+		<?php echo markdown($page->text()) ?>
+	</article>
 
-<b>Contacts</b>
-<p><?php echo $page->mail() ?></p>
-<p><?php echo $page->phone() ?></p>
-<p><?php echo $page->street() ?></p>
-<p><?php echo $page->city() ?></p>
-<p><?php echo $page->state() ?></p>
+	<aside>
+		<section>
+			<h3>Contacts</h3>
+			<a class="e-mail" href="mailto:<?php echo $page->mail() ?>"><?php echo $page->mail() ?></a>
+			<p><?php echo $page->phone() ?></p>
+			<hr class="half">
+			<p><?php echo $page->street() ?></p>
+			<p><?php echo $page->city() ?></p>
+			<p><?php echo $page->state() ?></p>
+		</section>
 
+		<section>
+			<h3>Social</h3>
+			<ul>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">Twitter</a></li>
+				<li><a href="">Instagram</a></li>
+				<li><a href="">Linkedin</a></li>
+			</ul>
+		</section>
 
-<b>Social</b>
-<a href=""><p>Facebook</p></a>
-<a href=""><p>Twitter</p></a>
-<a href=""><p>Instagram</p></a>
-<a href=""><p>Linkedin</p></a>
-
-<b>Selected Clients</b>
-<ul>
-	<?php foreach(str::split($page->clients()) as $client): ?>
-		<li>
-			<a href="<?php echo url('blog/client:' . urlencode($client)) ?>"><?php echo $client ?></a>
-		</li>
-	<?php endforeach ?>
-</ul>
+		<section>
+			<h3>Selected Clients</h3>
+			<ul>
+				<?php foreach(str::split($page->clients()) as $client): ?>
+					<li>
+						<a href="<?php echo url('blog/client:' . urlencode($client)) ?>"><?php echo $client ?></a>
+					</li>
+				<?php endforeach ?>
+			</ul>
+		</section>
+	</aside>
 
 <?php snippet('footer') ?>

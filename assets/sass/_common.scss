@@ -28,6 +28,10 @@ hr {
   border-top: 1px solid $red;
   margin: 1em 0;
   padding: 0;
+  &.half{
+    visibility: hidden;
+    margin: 0.5em 0 0;
+  }
 }
 
 ul{
@@ -64,6 +68,9 @@ a{
   &:hover{
     color: $red;
   }
+  &.e-mail{
+    border-bottom: 1px solid $red;
+  }
 }
 
 .browsehappy {
@@ -95,6 +102,13 @@ body {
 
 .main{
   padding: 100px 0 200px;
+  .title{
+    color: $red;
+    margin-bottom: 0;
+  }
+  article{
+    margin-top: 1.2em;
+  }
 }
 
 article img{
@@ -102,31 +116,6 @@ article img{
   margin-bottom: 2em;
 }
 
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-
-@media only screen and (min-width: 768px) {
-  .main article {
-      float: right;
-      width: 70%;
-      margin-top: 0.3em;
-  }
-
-  .main aside {
-      float: left;
-      width: 28%;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-  .wrapper {
-      width: 1026px; /* 1140px - 10% for margins */
-      margin: 0 auto;
-  }
-}
 
 /* ==========================================================================
    Helper classes

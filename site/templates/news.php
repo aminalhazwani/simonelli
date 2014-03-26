@@ -1,35 +1,47 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
 
-<b>Titolo e testi</b>
-<p><?php echo $page->title() ?></p>
-<p><?php echo kirbytext($page->text()) ?></p>
+	<h1 class="title"><?php echo $page->title() ?></h1>
+	<article>
+		<?php echo markdown($page->text()) ?>
 
-<b>Date</b>
-<p><?php echo $page->date('l j F Y') ?></p>
+		<?php if($page->hasImages()): ?> 
+		<ul>
+		  <?php foreach($page->images() as $image): ?>
+		  <li>
+		  	<img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
+		  </li>
+		  <?php endforeach ?>
+		</ul>
+		<?php endif ?>
+	</article>
 
-<b>Tags</b>
-<ul class="tags">
-	<?php foreach(str::split($page->tags()) as $tag): ?>
-		<li>
-			<a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a>
-		</li>
-	<?php endforeach ?>
-</ul>
+	<aside>
+		<section>
+			<h3>Date</h3>
+			<ul>
+				<li><?php echo $page->date('l j F Y') ?></li>
+			</ul>
+		</section>
 
-<b>Share</b>
-<a href=""><p>Facebook</p></a>
-<a href=""><p>Twitter</p></a>
-<a href=""><p>Google +</p></a>
+		<section>
+			<h3>Tags</h3>
+			<ul class="tags">
+				<?php foreach(str::split($page->tags()) as $tag): ?>
+					<li>
+						<a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a>
+					</li>
+				<?php endforeach ?>
+			</ul>
+		</section>
 
-<?php if($page->hasImages()): ?> 
-	<ul>
-	  <?php foreach($page->images() as $image): ?>
-	  <li>
-	  	<img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
-	  </li>
-	  <?php endforeach ?>
-	</ul>
-<?php endif ?>
+		<section>
+			<h3>Share</h3>
+			<ul>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">Twitter</a></li>
+				<li><a href="">Google +</a></li>
+			</ul>
+		</section>
+	</aside>
 
 <?php snippet('footer') ?>

@@ -6,9 +6,11 @@
 @import "common";
 @import "typography";
 
+/* Fixed elements */
 @import "header";
 @import "footer";
 
 /* Media Queries */
+@import "media-queries";
 @import "print";
 
