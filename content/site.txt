@@ -6,4 +6,4 @@ Description: Product design and art direction
 ----
 Keywords: design, product, research, fabrication, arduino
 ----
-Copyright: © 2006-(date: Year) (link: http://simonesimonelli.it text: Simone Simonelli)
+Copyright: Simone Simonelli

@@ -1,15 +1,13 @@
 <?php snippet('header') ?>
 
-<?php snippet('menu') ?>
-
 <p><?php echo kirbytext($page->text()) ?></p>
 
 <div id="wrapper" 
-	class="js-isotope" 
-	data-isotope-options='{ 
+		class="js-isotope" 
+		data-isotope-options='{ 
 		"itemSelector": ".item",
 		"cellsByColumn": { "columnWidth": ".item" } 
-	}'>
+		}'>
 
 	<?php 
 		foreach($pages->visible() as $section) {
