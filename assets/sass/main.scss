@@ -1,0 +1,14 @@
+/* Reset styles */
+@import "normalize";
+
+/* Defining common styles */
+@import "vars";
+@import "common";
+@import "typography";
+
+@import "header";
+@import "footer";
+
+/* Media Queries */
+@import "print";
+

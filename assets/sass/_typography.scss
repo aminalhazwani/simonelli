@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.main{
+  .title{
+    margin-left: 30%;
+    color: $red;
+    margin-bottom: 0;
+  }
+}
+
+aside{
+	section{
+		margin-bottom: 3em;
+	}
+	h3{
+		color: $red;
+		margin-bottom: 0;
+	}
+	ul li{
+		border-bottom: 1px solid $red;
+		padding: 0.5em 0;
+	}
+}
+
+

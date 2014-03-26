@@ -12,7 +12,6 @@
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?php echo css('assets/css/normalize.min.css') ?>
     <?php echo css('assets/css/main.css') ?>
 
     <?php echo js('assets/js/vendor/jquery-1.11.0.min.js') ?>
@@ -26,13 +25,13 @@
     <![endif]-->
     <div class="header-container">
       <header class="wrapper clearfix">
-        <a href="<?php echo url() ?>"><h3 class="title"><?php echo html($site->title()) ?></h3></a>
+        <h3 class="site-title"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h3>
         <nav>
           <ul>
-            <li><a class="filter" href="<?php echo url() ?>" data-filter=".work">work</a></li>
-            <li><a class="filter" href="<?php echo url() ?>" data-filter=".education">education</a></li>
-            <li><a href="<?php echo url() ?>about">about</a></li>
-            <li><a href="<?php echo url() ?>news">news</a></li>
+            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".work">work</a></h3></li>
+            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".education">education</a></h3></li>
+            <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
+            <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>
           </ul>
         </nav>  
       </header>

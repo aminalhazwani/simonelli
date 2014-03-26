@@ -1,0 +1,21 @@
+.footer-container {
+    background: #f9fafd;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+
+    cursor: pointer;
+    p{
+        float: left;
+    	width: 50%;
+    	margin: 0;	
+    }
+    span{
+    	float: right;
+    	width: 50%;
+    	text-align: right;
+    }
+}
