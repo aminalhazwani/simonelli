@@ -18,12 +18,17 @@ aside{
 }
 
 article{
-	h3{
+	h3, h2{
 		color: $red;
-		margin: 0;
+		margin: 0 0 0.25em;
 	}
 	p{
-		margin-top: 0;
+		margin: 0 0 1.5em;
+	}
+	ul li{
+		p{
+			margin: 0 0 0.25em;
+		}
 	}
 }
 
