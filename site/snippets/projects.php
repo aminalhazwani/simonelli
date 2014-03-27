@@ -5,6 +5,7 @@
 
 		<a class="#" href="<?php echo $project->url() ?>">
 
+			<div class="arrow-mobile"></div>
 			<div class="meta">
 		    	<h3><?php echo html($project->title()) ?></h3>
 		     	<span><?php echo html($project->manufacter()) ?></span>,

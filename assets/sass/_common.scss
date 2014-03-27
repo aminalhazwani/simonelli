@@ -94,7 +94,7 @@ body {
 }
 
 .wrapper {
-  width: 94%;
+  width: 92%;
   padding: 0 4%;
   margin: 0 auto;
 }
@@ -112,12 +112,11 @@ body {
   }
   article{
     margin-top: 1.2em;
+    img{
+      width: 100%;
+      margin-bottom: 2em;
+    }
   }
-}
-
-article img{
-  width: 100%;
-  margin-bottom: 2em;
 }
 
 

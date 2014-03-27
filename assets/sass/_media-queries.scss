@@ -14,12 +14,61 @@
 
         }
     }
+  }
+  .site-title{
+    display: block !important;
+    width: 30% !important;
+  }
+  nav{
+    display: block !important;
   } 
+
+  .slicknav_menu, .contact{
+    display: none !important;
+  }
+
+  .arrow-mobile{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1140px) {
   .wrapper {
     width: 1026px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  header.wrapper{
+    padding: 0;
+    width: 100%;
+  }
+  #wrapper{
+    width: 100%;
+    .news{
+      width: calc(100% - 2em);
+      margin: 0 0 2em 0;
+    }
+    .item{
+      .meta{
+        display: block;
+        text-align: left;
+        margin: 0 0 0.5em 0;
+        float: left;
+      }
+      &.work, &.education{
+        margin: 0 0 2em 0;
+        figure{
+          display: block;
+        }
+      }
+      figure img{
+          width: 100%;
+      }
+      .arrow{
+        display: none;
+      }
+    }
   }
 }

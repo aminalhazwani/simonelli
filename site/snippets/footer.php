@@ -8,6 +8,7 @@
     </div>
 
 	<?php echo js('assets/js/plugins.js') ?>
+    <?php echo js('assets/js/vendor/jquery.slicknav.min.js') ?>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

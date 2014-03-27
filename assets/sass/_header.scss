@@ -5,10 +5,11 @@
     width: 100%;
     z-index: 3;
     .site-title{
+    	display: none;
     	float: left;
-    	width: 30%;
     }
     nav{
+    	display: none;
 	    float: left;
 	    width: 70%;
 	    ul{
@@ -35,4 +36,45 @@ nav ul li {
 
 .oldie nav a {
     margin: 0 0.7%;
+}
+
+/* Mobile Navigation */
+.slicknav_menu{
+	.slicknav_btn{
+		display: block;
+		padding: 1.15em 4%;
+		&:hover{
+			color: $blue;
+		}
+	}
+	.slicknav_menutxt{
+		font-size: 19px;
+		font-weight: bold;
+	}
+	.slicknav_nav{
+		li{
+			h3{
+				margin: 0;
+				a{
+					color: #fff;
+					display: block;
+					padding: 1.15em 4%;
+				}
+			}
+		}
+	}
+	.slicknav_icon{
+		float: right;
+		display: block;
+		margin-top: 2px;
+		width: 20px;
+		height: 24px;
+		span.slicknav_icon-bar{
+			background-color: $blue;
+			width: 20px;
+			height: 4px;
+			margin-bottom: 4px;
+			float: left;
+		}
+	}
 }

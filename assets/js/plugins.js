@@ -7,6 +7,20 @@ $(document).ready(function () {
         return false;
     });
 
+    $(function(){
+        $('#menu').slicknav({
+            label: 'Simone Simonelli',
+            prependTo:'header',
+            open : function (trigger){
+                console.log($(trigger).next().children("li").length);
+                    var numElem = $(trigger).next().children("li").length;
+                    $(trigger).next().children("li").each(function( index ) {
+                        var opacityValue = (index ) * (1) / (numElem);
+                        $( this ).css("background-color","rgba(6,58,128,"+(1-opacityValue)+")");
+                    }); 
+            }
+        });
+    });
 
     // $(window).bind('scroll', function() {
     //     if ($(window).scrollTop() > 90) {
