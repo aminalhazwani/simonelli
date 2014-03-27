@@ -1,13 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/* Content under header and above container*/
 .intro{
 	margin-top: 5em;
 }
 
 .title{
-	margin-top: 3em;
+	margin: 3em 0 0;
+	color: $red;
+    line-height: 1.2;
 }
 
+
+/* Sidebar */
 aside{
 	&.contact{
 		margin-top: 5em;
@@ -28,6 +33,7 @@ aside{
 	}
 }
 
+/* Content */
 article{
 	h3, h2{
 		color: $red;
@@ -44,6 +50,13 @@ article{
 	margin-bottom: 3em;
 }
 
+.item{
+	a:hover{
+		color: $blue;
+	}
+}
+
+/* News item */
 .news{
 	margin: 0 1em 1em 0;
 	background-color: $red;
@@ -64,6 +77,7 @@ article{
 	}
 }
 
+/* Project item */
 .work, .education{
 	margin: 0 1em 1em 0;
 	.meta, figure{
@@ -91,7 +105,7 @@ article{
 	}
 }
 
-/* Figcaption animation */
+/* Figcaption item */
 .education, .work{
 	figure{
 		margin: 0;
