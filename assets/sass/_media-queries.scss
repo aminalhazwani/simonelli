@@ -47,7 +47,7 @@
   #wrapper{
     width: 100%;
     .news{
-      width: calc(100% - 2em);
+      width: 100%;
       margin: 0 0 2em 0;
     }
     .item{
@@ -71,4 +71,19 @@
       }
     }
   }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .arrow, .arrow-mobile{
+    background-image: url(../images/arrow@2x.png);
+    background-size: 32px 14px;
+  }
+
 }

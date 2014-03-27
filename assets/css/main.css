@@ -681,12 +681,13 @@ body {
 .main .title {
   color: #f84a45;
   margin-bottom: 0;
+  line-height: 1.2;
 }
-/* line 113, ../sass/_common.scss */
+/* line 114, ../sass/_common.scss */
 .main article {
   margin-top: 1.2em;
 }
-/* line 115, ../sass/_common.scss */
+/* line 116, ../sass/_common.scss */
 .main article img {
   width: 100%;
   margin-bottom: 2em;
@@ -695,7 +696,7 @@ body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 127, ../sass/_common.scss */
+/* line 128, ../sass/_common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -703,7 +704,7 @@ body {
   *text-indent: -9999px;
 }
 
-/* line 134, ../sass/_common.scss */
+/* line 135, ../sass/_common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -711,13 +712,13 @@ body {
   height: 150%;
 }
 
-/* line 141, ../sass/_common.scss */
+/* line 142, ../sass/_common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 146, ../sass/_common.scss */
+/* line 147, ../sass/_common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -729,7 +730,7 @@ body {
   width: 1px;
 }
 
-/* line 158, ../sass/_common.scss */
+/* line 159, ../sass/_common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -740,42 +741,42 @@ body {
   width: auto;
 }
 
-/* line 167, ../sass/_common.scss */
+/* line 168, ../sass/_common.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 172, ../sass/_common.scss */
+/* line 173, ../sass/_common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 177, ../sass/_common.scss */
+/* line 178, ../sass/_common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 181, ../sass/_common.scss */
+/* line 182, ../sass/_common.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /**** Isotope Filtering ****/
-/* line 188, ../sass/_common.scss */
+/* line 189, ../sass/_common.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 192, ../sass/_common.scss */
+/* line 193, ../sass/_common.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 200, ../sass/_common.scss */
+/* line 201, ../sass/_common.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -785,7 +786,7 @@ body {
   transition-duration: 0.8s;
 }
 
-/* line 208, ../sass/_common.scss */
+/* line 209, ../sass/_common.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -794,7 +795,7 @@ body {
   transition-property: height, width;
 }
 
-/* line 216, ../sass/_common.scss */
+/* line 217, ../sass/_common.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -804,7 +805,7 @@ body {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 228, ../sass/_common.scss */
+/* line 229, ../sass/_common.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -853,41 +854,49 @@ article ul li p {
   margin: 0 1em 1em 0;
   background-color: #f84a45;
   width: calc(300px - 2em);
+}
+/* line 39, ../sass/_typography.scss */
+.news a {
+  display: block;
   padding: 1em;
 }
-/* line 40, ../sass/_typography.scss */
+/* line 42, ../sass/_typography.scss */
+.news a:hover {
+  background-color: #063a80;
+}
+/* line 46, ../sass/_typography.scss */
 .news h3, .news p, .news data {
   color: #fff;
   margin: 0;
 }
-/* line 44, ../sass/_typography.scss */
-.news:hover {
-  background-color: #063a80;
+/* line 50, ../sass/_typography.scss */
+.news p {
+  line-height: 1.4;
 }
 
-/* line 49, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 .work, .education {
   margin: 0 1em 1em 0;
 }
-/* line 51, ../sass/_typography.scss */
+/* line 57, ../sass/_typography.scss */
 .work .meta, .work figure, .education .meta, .education figure {
   display: inline-block;
   vertical-align: top;
 }
-/* line 55, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 .work figure img, .education figure img {
   width: 240px;
 }
-/* line 58, ../sass/_typography.scss */
+/* line 64, ../sass/_typography.scss */
 .work .meta, .education .meta {
   margin: 2em 1em 0 0;
   text-align: right;
 }
-/* line 61, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
 .work .meta h3, .work .meta span, .work .meta data, .education .meta h3, .education .meta span, .education .meta data {
   margin: 0;
 }
-/* line 65, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 .work .arrow, .education .arrow {
   background-image: url(../images/arrow.png);
   float: right;
@@ -898,7 +907,7 @@ article ul li p {
   background-position-x: 100%;
 }
 
-/* line 76, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 .arrow-mobile {
   background-image: url(../images/arrow.png);
   float: left;
@@ -907,9 +916,7 @@ article ul li p {
   margin-top: 1.3em;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  /* IE 9 */
   -webkit-transform: rotate(90deg);
-  /* Opera, Chrome, and Safari */
 }
 
 /* Fixed elements */
@@ -1011,19 +1018,19 @@ nav ul li {
   width: 100%;
   height: 40px;
   padding-top: 20px;
-  cursor: pointer;
 }
-/* line 11, ../sass/_footer.scss */
+/* line 9, ../sass/_footer.scss */
 .footer-container p {
   float: left;
   width: 50%;
   margin: 0;
 }
-/* line 16, ../sass/_footer.scss */
+/* line 14, ../sass/_footer.scss */
 .footer-container span {
   float: right;
   width: 50%;
   text-align: right;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -1084,7 +1091,7 @@ nav ul li {
   }
   /* line 49, ../sass/_media-queries.scss */
   #wrapper .news {
-    width: calc(100% - 2em);
+    width: 100%;
     margin: 0 0 2em 0;
   }
   /* line 54, ../sass/_media-queries.scss */
@@ -1109,6 +1116,13 @@ nav ul li {
   /* line 69, ../sass/_media-queries.scss */
   #wrapper .item .arrow {
     display: none;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 84, ../sass/_media-queries.scss */
+  .arrow, .arrow-mobile {
+    background-image: url(../images/arrow@2x.png);
+    background-size: 32px 14px;
   }
 }
 @media print {
