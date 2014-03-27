@@ -1,7 +1,10 @@
 @media only screen and (min-width: 768px) {
   .main{
-    .title, .intro{
-    margin-left: 30%;
+    .title{
+      margin: 4em 0 0 30%;
+    }
+    .intro{
+      margin: 6em 0 3em 30%;
     }
     article {
         float: right;
@@ -39,7 +42,7 @@
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
   header.wrapper{
     padding: 0;
     width: 100%;
@@ -55,13 +58,9 @@
         display: block;
         text-align: left;
         margin: 0 0 0.5em 0;
-        float: left;
       }
       &.work, &.education{
         margin: 0 0 2em 0;
-        figure{
-          display: block;
-        }
       }
       figure img{
           width: 100%;

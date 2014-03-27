@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 	
-	<aside>
+	<aside class="contact">
 		<section>
 			<h3>Contacts</h3>
 			<a class="e-mail" href="mailto:<?php echo $page->mail() ?>"><?php echo $page->mail() ?></a>

@@ -15,9 +15,9 @@
 
 		    <figure>
 		    	<img src="<?php echo $education->images()->first()->url() ?>" alt="<?php echo html($education->title()) ?>" />
-			    <!-- <figcaption>
+			    <figcaption>
 			    	<span><?php echo html($education->category()) ?></span>
-			    </figcaption> -->
+			    </figcaption>
 		    </figure>
 
 		</a>

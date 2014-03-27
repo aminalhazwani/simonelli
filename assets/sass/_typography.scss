@@ -1,6 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.intro{
+	margin-top: 5em;
+}
+
+.title{
+	margin-top: 3em;
+}
+
 aside{
+	&.contact{
+		margin-top: 5em;
+	}
 	section{
 		margin-bottom: 3em;
 		p{
@@ -30,6 +41,7 @@ article{
 			margin: 0 0 0.25em;
 		}
 	}
+	margin-bottom: 3em;
 }
 
 .news{
@@ -75,7 +87,57 @@ article{
 		height: 14px;
 		margin-top: 0.3em;
 		background-repeat: no-repeat;
-		background-position-x: 100%; 
+		background-position: 100%; 
+	}
+}
+
+/* Figcaption animation */
+.education, .work{
+	figure{
+		margin: 0;
+		position: relative;
+		overflow: hidden;
+		border-bottom: 3px solid $blue;
+		&:hover{
+			img{
+				-webkit-transform: translateY(-10px);
+				transform: translateY(-10px);
+			}
+			figcaption{
+				opacity: 1;
+				-webkit-transform: translateY(0px);
+				transform: translateY(0px);
+
+				-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+				transition: transform 0.4s, opacity 0.1s;
+			}
+		}
+		img{
+			max-width: 100%;
+			display: block;
+			position: relative;
+			-webkit-transition: -webkit-transform 0.4s;
+			transition: transform 0.4s;
+		}
+		figcaption{
+			position: absolute;
+			padding: 0.5em 0 0.5em 1em;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			font-weight: bold;
+			background-color: $blue;
+			color: #fff;
+
+			height: 24px;
+			width: 100%;
+			top: auto;
+			bottom: 0;
+			opacity: 0;
+			-webkit-transform: translateY(100%);
+			transform: translateY(100%);
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
 	}
 }
 
@@ -85,9 +147,7 @@ article{
 	width: 32px;
 	height: 14px;
 	margin-top: 1.3em;
-	transform:rotate(90deg);
-	-ms-transform:rotate(90deg); 
-	-webkit-transform:rotate(90deg);
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg);
 }
-
-

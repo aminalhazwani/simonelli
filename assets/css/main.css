@@ -675,7 +675,7 @@ body {
 
 /* line 107, ../sass/_common.scss */
 .main {
-  padding: 100px 4% 200px;
+  padding: 0 4% 200px;
 }
 /* line 109, ../sass/_common.scss */
 .main .title {
@@ -776,127 +776,105 @@ body {
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 201, ../sass/_common.scss */
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+/* line 3, ../sass/_typography.scss */
+.intro {
+  margin-top: 5em;
 }
 
-/* line 209, ../sass/_common.scss */
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width;
+/* line 7, ../sass/_typography.scss */
+.title {
+  margin-top: 3em;
 }
 
-/* line 217, ../sass/_common.scss */
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
-  -o-transition-property: -o-transform, opacity;
-  transition-property: transform, opacity;
+/* line 12, ../sass/_typography.scss */
+aside.contact {
+  margin-top: 5em;
 }
-
-/**** disabling Isotope CSS3 transitions ****/
-/* line 229, ../sass/_common.scss */
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
-
-/* line 4, ../sass/_typography.scss */
+/* line 15, ../sass/_typography.scss */
 aside section {
   margin-bottom: 3em;
 }
-/* line 6, ../sass/_typography.scss */
+/* line 17, ../sass/_typography.scss */
 aside section p {
   margin: 0;
 }
-/* line 10, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 aside h3 {
   color: #f84a45;
   margin-bottom: 0;
 }
-/* line 14, ../sass/_typography.scss */
+/* line 25, ../sass/_typography.scss */
 aside ul li {
   border-bottom: 1px solid #f84a45;
   padding: 0.5em 0;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
+article {
+  margin-bottom: 3em;
+}
+/* line 32, ../sass/_typography.scss */
 article h3, article h2 {
   color: #f84a45;
   margin: 0 0 0.25em;
 }
-/* line 25, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 article p {
   margin: 0 0 1.5em;
 }
-/* line 29, ../sass/_typography.scss */
+/* line 40, ../sass/_typography.scss */
 article ul li p {
   margin: 0 0 0.25em;
 }
 
-/* line 35, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 .news {
   margin: 0 1em 1em 0;
   background-color: #f84a45;
   width: calc(300px - 2em);
 }
-/* line 39, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 .news a {
   display: block;
   padding: 1em;
 }
-/* line 42, ../sass/_typography.scss */
+/* line 54, ../sass/_typography.scss */
 .news a:hover {
   background-color: #063a80;
 }
-/* line 46, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 .news h3, .news p, .news data {
   color: #fff;
   margin: 0;
 }
-/* line 50, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 .news p {
   line-height: 1.4;
 }
 
-/* line 55, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
 .work, .education {
   margin: 0 1em 1em 0;
 }
-/* line 57, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .work .meta, .work figure, .education .meta, .education figure {
   display: inline-block;
   vertical-align: top;
 }
-/* line 61, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 .work figure img, .education figure img {
   width: 240px;
 }
-/* line 64, ../sass/_typography.scss */
+/* line 76, ../sass/_typography.scss */
 .work .meta, .education .meta {
   margin: 2em 1em 0 0;
   text-align: right;
 }
-/* line 67, ../sass/_typography.scss */
+/* line 79, ../sass/_typography.scss */
 .work .meta h3, .work .meta span, .work .meta data, .education .meta h3, .education .meta span, .education .meta data {
   margin: 0;
 }
-/* line 71, ../sass/_typography.scss */
+/* line 83, ../sass/_typography.scss */
 .work .arrow, .education .arrow {
   background-image: url(../images/arrow.png);
   float: right;
@@ -904,10 +882,59 @@ article ul li p {
   height: 14px;
   margin-top: 0.3em;
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position: 100%;
 }
 
-/* line 82, ../sass/_typography.scss */
+/* Figcaption animation */
+/* line 96, ../sass/_typography.scss */
+.education figure, .work figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid #063a80;
+}
+/* line 102, ../sass/_typography.scss */
+.education figure:hover img, .work figure:hover img {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 106, ../sass/_typography.scss */
+.education figure:hover figcaption, .work figure:hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+/* line 115, ../sass/_typography.scss */
+.education figure img, .work figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+/* line 122, ../sass/_typography.scss */
+.education figure figcaption, .work figure figcaption {
+  position: absolute;
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #063a80;
+  color: #fff;
+  height: 24px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+/* line 144, ../sass/_typography.scss */
 .arrow-mobile {
   background-image: url(../images/arrow.png);
   float: left;
@@ -934,23 +961,27 @@ article ul li p {
   float: left;
 }
 /* line 11, ../sass/_header.scss */
+.header-container h3.intro {
+  margin-top: 5em;
+}
+/* line 14, ../sass/_header.scss */
 .header-container nav {
   display: none;
   float: left;
   width: 70%;
 }
-/* line 15, ../sass/_header.scss */
+/* line 18, ../sass/_header.scss */
 .header-container nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 18, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 .header-container nav ul li h3 {
   font-weight: normal;
   margin: 1em 0;
   padding: 0;
 }
-/* line 22, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 .header-container nav ul li h3 a {
   float: left;
   margin-right: 6%;
@@ -958,42 +989,42 @@ article ul li p {
 }
 
 /* IE7 Browser Fix */
-/* line 33, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 nav ul li {
   display: inline;
 }
 
-/* line 37, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 .oldie nav a {
   margin: 0 0.7%;
 }
 
 /* Mobile Navigation */
-/* line 43, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 .slicknav_menu .slicknav_btn {
   display: block;
   padding: 1.15em 4%;
 }
-/* line 46, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 .slicknav_menu .slicknav_btn:hover {
   color: #063a80;
 }
-/* line 50, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 .slicknav_menu .slicknav_menutxt {
   font-size: 19px;
   font-weight: bold;
 }
-/* line 56, ../sass/_header.scss */
+/* line 59, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 {
   margin: 0;
 }
-/* line 58, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 a {
   color: #fff;
   display: block;
   padding: 1.15em 4%;
 }
-/* line 66, ../sass/_header.scss */
+/* line 69, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon {
   float: right;
   display: block;
@@ -1001,7 +1032,7 @@ nav ul li {
   width: 20px;
   height: 24px;
 }
-/* line 72, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon span.slicknav_icon-bar {
   background-color: #063a80;
   width: 20px;
@@ -1036,90 +1067,89 @@ nav ul li {
 /* Media Queries */
 @media only screen and (min-width: 768px) {
   /* line 3, ../sass/_media-queries.scss */
-  .main .title, .main .intro {
-    margin-left: 30%;
+  .main .title {
+    margin: 4em 0 0 30%;
   }
   /* line 6, ../sass/_media-queries.scss */
+  .main .intro {
+    margin: 6em 0 3em 30%;
+  }
+  /* line 9, ../sass/_media-queries.scss */
   .main article {
     float: right;
     width: 70%;
   }
-  /* line 10, ../sass/_media-queries.scss */
+  /* line 13, ../sass/_media-queries.scss */
   .main aside {
     float: left;
     width: 28%;
   }
 
-  /* line 18, ../sass/_media-queries.scss */
+  /* line 21, ../sass/_media-queries.scss */
   .site-title {
     display: block !important;
     width: 30% !important;
   }
 
-  /* line 22, ../sass/_media-queries.scss */
+  /* line 25, ../sass/_media-queries.scss */
   nav {
     display: block !important;
   }
 
-  /* line 26, ../sass/_media-queries.scss */
+  /* line 29, ../sass/_media-queries.scss */
   .slicknav_menu, .contact {
     display: none !important;
   }
 
-  /* line 30, ../sass/_media-queries.scss */
+  /* line 33, ../sass/_media-queries.scss */
   .arrow-mobile {
     display: none;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 36, ../sass/_media-queries.scss */
+  /* line 39, ../sass/_media-queries.scss */
   .wrapper {
     width: 1026px;
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 768px) {
-  /* line 43, ../sass/_media-queries.scss */
+@media only screen and (max-width: 767px) {
+  /* line 46, ../sass/_media-queries.scss */
   header.wrapper {
     padding: 0;
     width: 100%;
   }
 
-  /* line 47, ../sass/_media-queries.scss */
+  /* line 50, ../sass/_media-queries.scss */
   #wrapper {
     width: 100%;
   }
-  /* line 49, ../sass/_media-queries.scss */
+  /* line 52, ../sass/_media-queries.scss */
   #wrapper .news {
     width: 100%;
     margin: 0 0 2em 0;
   }
-  /* line 54, ../sass/_media-queries.scss */
+  /* line 57, ../sass/_media-queries.scss */
   #wrapper .item .meta {
     display: block;
     text-align: left;
     margin: 0 0 0.5em 0;
-    float: left;
   }
-  /* line 60, ../sass/_media-queries.scss */
+  /* line 62, ../sass/_media-queries.scss */
   #wrapper .item.work, #wrapper .item.education {
     margin: 0 0 2em 0;
   }
-  /* line 62, ../sass/_media-queries.scss */
-  #wrapper .item.work figure, #wrapper .item.education figure {
-    display: block;
-  }
-  /* line 66, ../sass/_media-queries.scss */
+  /* line 65, ../sass/_media-queries.scss */
   #wrapper .item figure img {
     width: 100%;
   }
-  /* line 69, ../sass/_media-queries.scss */
+  /* line 68, ../sass/_media-queries.scss */
   #wrapper .item .arrow {
     display: none;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 84, ../sass/_media-queries.scss */
+  /* line 83, ../sass/_media-queries.scss */
   .arrow, .arrow-mobile {
     background-image: url(../images/arrow@2x.png);
     background-size: 32px 14px;
