@@ -5,12 +5,14 @@
 	<article>
 		<?php foreach($page->children()->visible()->flip()->limit(5) as $article): ?>
 		<ul>
-			<li>
-				<p><?php echo $article->date('l j F Y') ?></p>
-				<h2><?php echo html($article->title()) ?></h2>
-				<p><?php echo excerpt($article->text(), 500) ?></p>
-				<hr>
-			</li>
+			<a href="<?php echo $article->url() ?>">
+				<li>
+					<p><?php echo $article->date('l j F Y') ?></p>
+					<h2><?php echo html($article->title()) ?></h2>
+					<p><?php echo excerpt($article->text(), 400) ?></p>
+					<hr>
+				</li>
+			</a>
 		</ul>
 		<?php endforeach ?>
 	</article>

@@ -7,9 +7,6 @@
     	</div>
     </div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
 	<?php echo js('assets/js/plugins.js') ?>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -21,5 +18,6 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    
     </body>
 </html>

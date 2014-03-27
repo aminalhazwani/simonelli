@@ -32,4 +32,45 @@ article{
 	}
 }
 
+.news{
+	margin: 0 1em 1em 0;
+	background-color: $red;
+	width: calc(300px - 2em);
+	padding: 1em;
+	h3, p, data{
+		color: #fff;
+		margin: 0;
+	}
+	&:hover{
+		background-color: $blue;
+	}
+}
+
+.work, .education{
+	margin: 0 1em 1em 0;
+	.meta, figure{
+		display: inline-block;
+		vertical-align: top;
+	}
+	figure img{
+		width: 240px;
+	}
+	.meta{
+		margin: 2em 1em 0 0;
+		text-align: right;
+		h3, span, data{
+			margin: 0;
+		}
+	}
+	.arrow{
+		background-image: url(../images/arrow.png);
+		float: right;
+		width: 100%;
+		height: 14px;
+		margin-top: 0.3em;
+		background-repeat: no-repeat;
+		background-position-x: 100%; 
+	}
+}
+
 

@@ -10,7 +10,7 @@ city: 39100 Bolzano (BZ)
 ----
 state: Italia
 ----
-clients: miniforms, gibas, analogico/digitale 
+clients: miniforms, gibas, analogico/digitale, careof, Plus Design Gallery, Valcucine, Promosedia, Lorenz spa
 ----
 text: 
 ### What I am 

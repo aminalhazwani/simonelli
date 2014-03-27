@@ -14,9 +14,9 @@
 
     <?php echo css('assets/css/main.css') ?>
 
-    <?php echo js('assets/js/vendor/jquery-1.11.0.min.js') ?>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <?php echo js('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') ?>
-    <?php echo js('assets/js/vendor/jquery.isotope.min.js') ?>
+    <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
   </head>
 
   <body>
