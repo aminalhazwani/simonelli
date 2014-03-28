@@ -22,14 +22,14 @@ $(document).ready(function () {
         });
     });
 
-    // $(window).bind('scroll', function() {
-    //     if ($(window).scrollTop() > 90) {
-    //         $('aside').addClass('fixed');
-    //     }
-    //     else {
-    //         $('aside').removeClass('fixed');
-    //     }
-    // });
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 88) {
+            $('.sidebar').addClass('fixed');
+        }
+        else {
+            $('.sidebar').removeClass('fixed');
+        }
+    });
 
 
     // Isotope

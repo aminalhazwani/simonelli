@@ -25,7 +25,7 @@
 					<a href="<?php echo $article->link() ?>">
 						<li>
 							<span><?php echo html($article->website()) ?></span>
-							<span><?php echo $article->date('M. Y') ?></span>
+							<span class="date"><?php echo $article->date('M. Y') ?></span>
 						</li>
 					</a>
 				</ul>

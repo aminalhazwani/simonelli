@@ -795,81 +795,92 @@ aside ul li {
   border-bottom: 1px solid #f84a45;
   padding: 0.5em 0;
 }
+/* line 33, ../sass/_typography.scss */
+aside ul li .date {
+  float: right;
+}
+/* line 37, ../sass/_typography.scss */
+aside .sidebar.fixed {
+  position: fixed;
+  top: 80px;
+  width: inherit;
+  width: 26%;
+}
 
 /* Content */
-/* line 37, ../sass/_typography.scss */
+/* line 46, ../sass/_typography.scss */
 article {
   margin-bottom: 3em;
 }
-/* line 38, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 article h3, article h2 {
   color: #f84a45;
   margin: 0 0 0.25em;
 }
-/* line 42, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 article p {
   margin: 0 0 1.5em;
 }
-/* line 46, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 article ul li p {
   margin: 0 0 0.25em;
 }
 
-/* line 54, ../sass/_typography.scss */
+/* line 63, ../sass/_typography.scss */
 .item a:hover {
   color: #063a80;
 }
 
 /* News item */
-/* line 60, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .news {
   margin: 0 1em 1em 0;
   background-color: #f84a45;
   width: calc(300px - 2em);
 }
-/* line 64, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 .news a {
   display: block;
   padding: 1em;
 }
-/* line 67, ../sass/_typography.scss */
+/* line 76, ../sass/_typography.scss */
 .news a:hover {
   background-color: #063a80;
 }
-/* line 71, ../sass/_typography.scss */
+/* line 80, ../sass/_typography.scss */
 .news h3, .news p, .news data {
   color: #fff;
   margin: 0;
 }
-/* line 75, ../sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 .news p {
   line-height: 1.4;
 }
 
 /* Project item */
-/* line 81, ../sass/_typography.scss */
+/* line 90, ../sass/_typography.scss */
 .work, .education {
   margin: 0 1em 1em 0;
 }
-/* line 83, ../sass/_typography.scss */
+/* line 92, ../sass/_typography.scss */
 .work .meta, .work figure, .education .meta, .education figure {
   display: inline-block;
   vertical-align: top;
 }
-/* line 87, ../sass/_typography.scss */
+/* line 96, ../sass/_typography.scss */
 .work figure img, .education figure img {
   width: 240px;
 }
-/* line 90, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
 .work .meta, .education .meta {
   margin: 2em 1em 0 0;
   text-align: right;
 }
-/* line 93, ../sass/_typography.scss */
+/* line 102, ../sass/_typography.scss */
 .work .meta h3, .work .meta span, .work .meta data, .education .meta h3, .education .meta span, .education .meta data {
   margin: 0;
 }
-/* line 97, ../sass/_typography.scss */
+/* line 106, ../sass/_typography.scss */
 .work .arrow, .education .arrow {
   background-image: url(../images/arrow.png);
   float: right;
@@ -881,19 +892,19 @@ article ul li p {
 }
 
 /* Figcaption item */
-/* line 110, ../sass/_typography.scss */
+/* line 119, ../sass/_typography.scss */
 .education figure, .work figure {
   margin: 0;
   position: relative;
   overflow: hidden;
   border-bottom: 3px solid #063a80;
 }
-/* line 116, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .education figure:hover img, .work figure:hover img {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-/* line 120, ../sass/_typography.scss */
+/* line 129, ../sass/_typography.scss */
 .education figure:hover figcaption, .work figure:hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -901,7 +912,7 @@ article ul li p {
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s;
 }
-/* line 129, ../sass/_typography.scss */
+/* line 138, ../sass/_typography.scss */
 .education figure img, .work figure img {
   max-width: 100%;
   display: block;
@@ -909,7 +920,7 @@ article ul li p {
   -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
 }
-/* line 136, ../sass/_typography.scss */
+/* line 145, ../sass/_typography.scss */
 .education figure figcaption, .work figure figcaption {
   position: absolute;
   padding: 0.5em 0 0.5em 1em;
@@ -929,7 +940,7 @@ article ul li p {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 158, ../sass/_typography.scss */
+/* line 167, ../sass/_typography.scss */
 .arrow-mobile {
   background-image: url(../images/arrow.png);
   float: left;

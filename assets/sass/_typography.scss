@@ -30,6 +30,15 @@ aside{
 	ul li{
 		border-bottom: 1px solid $red;
 		padding: 0.5em 0;
+		.date{
+			float: right;
+		}
+	}
+	.sidebar.fixed{
+		position: fixed;
+		top: 80px;
+		width: inherit;
+		width: 26%;
 	}
 }
 
