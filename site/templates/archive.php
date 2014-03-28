@@ -20,6 +20,16 @@
 	<aside>
 		<section>
 			<h3>Selected Online Press</h3>
+			<?php foreach($pages->find('/online')->children()->visible() as $article): ?>
+				<ul>
+					<a href="<?php echo $article->link() ?>">
+						<li>
+							<span><?php echo html($article->website()) ?></span>
+							<span><?php echo $article->date('M. Y') ?></span>
+						</li>
+					</a>
+				</ul>
+			<?php endforeach ?>
 		</section>
 
 		<section>
