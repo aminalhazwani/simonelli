@@ -34,6 +34,16 @@
 
 		<section>
 			<h3>Selected Print Press</h3>
+			<?php foreach($pages->find('/press')->children()->visible() as $article): ?>
+				<ul>
+					<a href="<?php echo $article->images()->find('01.jpg')->url() ?>">
+						<li>
+							<span><?php echo html($article->magazine()) ?></span>
+							<span class="date"><?php echo $article->date('M. Y') ?></span>
+						</li>
+					</a>
+				</ul>
+			<?php endforeach ?>
 		</section>
 	</aside>
 
