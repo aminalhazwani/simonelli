@@ -7,6 +7,14 @@ $(document).ready(function () {
         return false;
     });
 
+    $( function(){
+        if($(".education").hasClass("bottom")){
+            $(".education a figure").insertBefore(".education a div.arrow");   
+            $(".education a div.arrow").toggleClass("rotate"); 
+            $(".education a div.meta").toggleClass("bottom");    
+        }
+    });
+
     $(function(){
         $('#menu').slicknav({
             label: 'Simone Simonelli',
@@ -36,7 +44,12 @@ $(document).ready(function () {
 
         // init Isotope
         var $container = $('#wrapper').isotope({
-            
+            itemSelector: '.item',
+            layoutMode: 'masonry',
+            masonry: {
+              columnWidth: '.work',
+              gutter: '.grid-gutter'
+            }
         });
 
         // filters
@@ -55,6 +68,5 @@ $(document).ready(function () {
         });
 
     });
-
 
 });

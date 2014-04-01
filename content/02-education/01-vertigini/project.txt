@@ -14,4 +14,6 @@ photo: WCP Collective
 ----
 materials: some, nice, new, materials
 ----
+orientation: bottom
+----
 text: La Facoltà di Design e Arti della Libera Università di Bolzano si presenta al pubblico del Salone del Mobile 2012 con tre allestimenti che raccontano le idee, sperimentazioni e ambizioni dei suoi studenti, attraverso una selezione di progetti.

@@ -14,6 +14,8 @@ photo: Curzio Castellan
 ----
 materials: some, nice, new, materials
 ----
+orientation: bottom
+----
 text: In June 2013, to celebrate the tenth-year anniversary of its founding, the project space Lungomare opened the Lungomare Gasthaus as a temporary space for thought and action. The Lungomare Gasthaus integrated the kitchen, a cultural and social place of production, with a one-month program consisting of discussions, conversations and workshops, a series of spatial interventions, a film program and a series of public performances and actions in the city of Bolzano.
 
 I've been asked to design seats and tables for the temporary restaurant!

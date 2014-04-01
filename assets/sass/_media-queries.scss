@@ -63,10 +63,7 @@
         margin: 0 0 2em 0;
       }
       figure img{
-          width: 100%;
-      }
-      .arrow{
-        display: none;
+        width: 100%;
       }
     }
   }
@@ -78,9 +75,9 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2){ 
   
-  .arrow, .arrow-mobile{
-    background-image: url(../images/arrow@2x.png);
-    background-size: 32px 14px;
+  .arrow{
+    background-image: url(../images/arrow@2x.png) !important;
+    background-size: 14px 32px;
   }
 
 }

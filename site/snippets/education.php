@@ -1,16 +1,15 @@
 <?php foreach($data->children()->visible() as $education): ?>
 
 
-	<div class="item <?php echo html($education->branch()) ?>">
+	<div class="item <?php echo html($education->branch()) ?> <?php echo html($education->orientation()) ?>">
 
 		<a class="#" href="<?php echo $education->url() ?>">
 
-			<div class="arrow-mobile"></div>
+			<div class="arrow"></div>
 			<div class="meta">
 		    	<h3><?php echo html($education->title()) ?></h3>
 		     	<span><?php echo html($education->manufacter()) ?></span>,
 		    	<data class="date" date-time="<?php echo $education->date('c') ?>"><?php echo $education->date('Y') ?></data>
-		    	<div class="arrow"></div>
 		    </div>
 
 		    <figure>
@@ -23,7 +22,7 @@
 		</a>
 
 	</div>
-
+	<div class="grid-gutter"></div>
 
 <?php endforeach ?>
 

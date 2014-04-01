@@ -14,6 +14,8 @@ photo:
 ----
 materials: some, nice, new, materials
 ----
+orientation: bottom
+----
 text: Stools collection 
 designed with Giulia Cavazzani
 

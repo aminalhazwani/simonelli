@@ -1,6 +1,10 @@
 /* Reset styles */
 @import "normalize";
 
+/* Media Queries */
+@import "media-queries";
+@import "print";
+
 /* Defining common styles */
 @import "vars";
 @import "common";
@@ -9,8 +13,4 @@
 /* Fixed elements */
 @import "header";
 @import "footer";
-
-/* Media Queries */
-@import "media-queries";
-@import "print";
 

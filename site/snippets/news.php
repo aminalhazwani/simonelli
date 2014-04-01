@@ -12,6 +12,6 @@
 		</a>
 
 	</div>
-
+	<div class="grid-gutter"></div>
 
 <?php endforeach ?>
