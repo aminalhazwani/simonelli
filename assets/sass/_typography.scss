@@ -67,6 +67,9 @@ article{
 
 .grid-gutter{
 	width: 2%;
+	@media only screen and (max-width: 960px) {
+		width: 4%;
+	}
 }
 
 /* News item */
@@ -74,6 +77,12 @@ article{
 	margin: 0 0 4em 0;
 	background-color: $red;
 	width: 32%;
+	@media only screen and (max-width: 960px) {
+		width: 48%;
+	}
+	@media only screen and (max-width: 600px) {
+		width: 100%;
+	}
 	a{
 		display: block;
 		padding: 1em;
@@ -96,8 +105,11 @@ article{
 .work, .education{
 	width: 32%;
 	margin: 0 0 4em 0;
-	figure img{
-		// width: 32%;
+	@media only screen and (max-width: 960px) {
+		width: 48%;
+	}
+	@media only screen and (max-width: 600px) {
+		width: 100%;
 	}
 	.meta{
 		display: inline-block;
@@ -148,7 +160,7 @@ article{
 			}
 		}
 		img{
-			max-width: 100%;
+			width: 100%;
 			display: block;
 			position: relative;
 			-webkit-transition: -webkit-transform 0.4s;
