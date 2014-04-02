@@ -39,34 +39,37 @@ $(document).ready(function () {
     //     }
     // });
 
-    // Isotope
-    $( function() {
+});
 
-        // init Isotope
-        var $container = $('#wrapper').isotope({
-            itemSelector: '.item',
-            layoutMode: 'masonry',
-            masonry: {
-              columnWidth: '.work',
-              gutter: '.grid-gutter'
-            }
-        });
-
-        // filters
-        $('.filter').click(function() {
-          var filterValue = $(this).attr('data-filter');
-          $container.isotope({ filter: filterValue });
-        });
-
-        $('#wrapper').isotope({
-            getSortData: {
-                date: function ($elem) {
-                    return Date.parse($elem.find('.date').attr('date-time'));
-                }
-            },
-            sortBy : 'date'
-        });
-
+// Isotope
+$(window).load(function() {
+    // init Isotope
+    var $container = $('#wrapper').isotope({
+        itemSelector: '.item',
+        layoutMode: 'masonry',
+        masonry: {
+          columnWidth: '.work',
+          gutter: '.grid-gutter'
+        }
     });
 
+    // filters
+    $('.filter').click(function() {
+      var filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
+    });
+
+    $('#wrapper').isotope({
+        getSortData: {
+            date: function (elem) {
+                return Date.parse($(elem).find('.date').attr('date-time'));
+            }
+        },
+        sortAscending: false,
+        sortBy : 'date'
+    });
+
+    $('#wrapper')
+        .isotope('updateSortData')
+        .isotope();
 });
