@@ -14,10 +14,10 @@
 		<section>
 			<h3>Social</h3>
 			<ul>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Instagram</a></li>
-				<li><a href="">Linkedin</a></li>
+				<!-- <li><a href="">Facebook</a></li> -->
+				<li><a href="https://twitter.com/simosimonelli">Twitter</a></li>
+				<li><a href="http://instagram.com/ssimonelli">Instagram</a></li>
+				<!-- <li><a href="">Linkedin</a></li> -->
 			</ul>
 		</section>
 	</aside>

@@ -28,20 +28,21 @@
 			<ul class="tags">
 				<?php foreach(str::split($page->tags()) as $tag): ?>
 					<li>
-						<a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a>
+						<!-- <a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a> -->
+						<p><?php echo $tag ?></p>
 					</li>
 				<?php endforeach ?>
 			</ul>
 		</section>
 
-		<section>
+<!-- 	<section>
 			<h3>Share</h3>
 			<ul>
 				<li><a href="">Facebook</a></li>
 				<li><a href="">Twitter</a></li>
 				<li><a href="">Google +</a></li>
 			</ul>
-		</section>
+		</section> -->
 	</aside>
 
 <?php snippet('footer') ?>

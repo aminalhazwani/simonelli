@@ -30,7 +30,8 @@
 				<ul>
 					<?php foreach(str::split($page->materials()) as $material): ?>
 						<li>
-							<a href="<?php echo url('blog/material:' . urlencode($material)) ?>"><?php echo $material ?></a>
+							<!-- <a href="<?php echo url('blog/material:' . urlencode($material)) ?>"><?php echo $material ?></a> -->
+							<p><?php echo $material ?></p>
 						</li>
 					<?php endforeach ?>
 				</ul>
@@ -39,18 +40,18 @@
 			<section>
 				<h3>Photo</h3>
 				<ul>
-					<li><a href=""><?php echo $page->photo() ?></a> </li>
+					<li> <p><?php echo $page->photo() ?></p> </li>
 				</ul>
 			</section>
 
-			<section>
+<!-- 		<section>
 				<h3>Share</h3>
 				<ul>
 					<li><a href="">Facebook</a></li>
 					<li><a href="">Twitter</a></li>
 					<li><a href="">Google +</a></li>
 				</ul>
-			</section>
+			</section> -->
 		</div>
 	</aside>
 
