@@ -30,15 +30,6 @@ $(document).ready(function () {
         });
     });
 
-    // $(window).bind('scroll', function() {
-    //     if ($(window).scrollTop() > 88) {
-    //         $('.sidebar').addClass('fixed');
-    //     }
-    //     else {
-    //         $('.sidebar').removeClass('fixed');
-    //     }
-    // });
-
 });
 
 // Isotope
@@ -54,11 +45,25 @@ $(window).load(function() {
     });
 
     // filters
-    $('.filter').click(function() {
-      var filterValue = $(this).attr('data-filter');
-      $container.isotope({ filter: filterValue });
-    });
+    // $('.filter').on( 'click', function() {
+    //   var filterValue = $(this).attr('data-filter');
+    //   $('#wrapper').isotope({ filter: filterValue });
+    // });
 
+     $('.filter').click(function(){ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
+
+    // sorting
     $('#wrapper').isotope({
         getSortData: {
             date: function (elem) {
