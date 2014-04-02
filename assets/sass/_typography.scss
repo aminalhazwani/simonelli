@@ -1,87 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* Content under header and above container*/
-.intro{
-	margin-top: 5em;
-}
-
-.title{
-	margin: 3em 0 0;
-	color: $red;
-    line-height: 1.2;
-}
-
-
-/* Sidebar */
-aside{
-	&.contact{
-		margin-top: 5em;
-	}
-	section{
-		margin-bottom: 3em;
-		p{
-			margin: 0;
-		}
-	}
-	h3{
-		color: $red;
-		margin-bottom: 0;
-	}
-	ul li{
-		border-bottom: 1px solid $red;
-		padding: 0.5em 0;
-		.date{
-			float: right;
-		}
-	}
-	.sidebar.fixed{
-		position: fixed;
-		top: 80px;
-		width: inherit;
-		width: 26%;
-	}
-}
-
-/* Content */
-article{
-	h3, h2{
-		color: $red;
-		margin: 0 0 0.25em;
-	}
-	p{
-		margin: 0 0 1.5em;
-	}
-	ul li{
-		p{
-			margin: 0 0 0.25em;
-		}
-	}
-	margin-bottom: 3em;
-}
-
-.item{
-	a:hover{
-		color: $blue;
-	}
-}
-
-.grid-gutter{
-	width: 2%;
-	@media only screen and (max-width: 960px) {
-		width: 4%;
-	}
-}
-
 /* News item */
 .news{
-	margin: 0 0 4em 0;
+	margin: 0 0 2em 0;
 	background-color: $red;
-	width: 32%;
-	@media only screen and (max-width: 960px) {
+	width: 100%;
+	@media only screen and (min-width: 600px) {
 		width: 48%;
 	}
-	@media only screen and (max-width: 600px) {
-		width: 100%;
+	@media only screen and (min-width: 960px) {
+		width: 32%;
 	}
 	a{
 		display: block;
@@ -103,13 +31,13 @@ article{
 
 /* Project item */
 .work, .education{
-	width: 32%;
-	margin: 0 0 4em 0;
-	@media only screen and (max-width: 960px) {
+	width: 100%;
+	margin: 0 0 2em 0;
+	@media only screen and (min-width: 600px) {
 		width: 48%;
 	}
-	@media only screen and (max-width: 600px) {
-		width: 100%;
+	@media only screen and (min-width: 960px) {
+		width: 32%;
 	}
 	.meta{
 		display: inline-block;

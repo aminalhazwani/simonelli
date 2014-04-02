@@ -8,14 +8,22 @@
     padding-top: 20px;
     p{
         float: left;
-    	width: 50%;
+    	width: 46%;
     	margin: 0;	
+        padding-left: 4%;
+        @media only screen and (min-width: 768px){
+            padding: 0;
+        }
     }
     span{
     	float: right;
-    	width: 50%;
+    	width: 46%;
+        padding-right: 4%;
     	text-align: right;
 
         cursor: pointer;
+        @media only screen and (min-width: 768px){
+            padding: 0;
+        }
     }
 }

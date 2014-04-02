@@ -7,11 +7,19 @@
     .site-title{
     	display: none;
     	float: left;
+    	@media only screen and (min-width: 768px) {
+    		display: block;
+    		width: 32%;
+    		float: left;
+    	}
     }
     nav{
     	display: none;
-	    float: left;
-	    width: 66%;
+    	@media only screen and (min-width: 768px) {
+    		display: block;
+		    float: right;
+		    width: 66%;
+		}
 	    ul{
 	    	margin: 0;
 	    	padding: 0;
@@ -26,6 +34,11 @@
 		    	}
 	    	}
 	    }
+	}
+	@media only screen and (min-width: 768px) {
+		.slicknav_menu{
+			display: none;
+		}
 	}
 }
 

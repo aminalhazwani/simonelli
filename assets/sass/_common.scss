@@ -86,41 +86,6 @@ a{
   padding: 0.2em 0;
 }
 
-body {
-  font: 16px/26px 'Montserrat', Helvetica, Arial, sans-serif;
-  background-color: $yellow;
-
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.wrapper {
-  width: 92%;
-  padding: 0 4%;
-  margin: 0 auto;
-  @media only screen and (min-width: 960px) {
-    width: 60em;
-  }
-}
-
-.main-container{
-  position: relative;
-  min-height: 100%;
-}
-
-.main{
-  padding: 0 4% 200px;
-  article{
-    margin-top: 1.2em;
-    img{
-      width: 100%;
-      margin-bottom: 2em;
-    }
-  }
-}
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
