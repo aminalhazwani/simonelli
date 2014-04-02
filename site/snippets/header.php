@@ -29,7 +29,7 @@
         <nav>
           <ul id="menu">
             <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".work">work</a></h3></li>
-            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".education">education</a></h3></li>
+            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".educational">educational</a></h3></li>
             <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
             <li><h3><a class="contact" href="<?php echo url() ?>contact">contact</a></h3></li>
             <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>

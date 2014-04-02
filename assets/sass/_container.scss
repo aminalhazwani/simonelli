@@ -85,8 +85,8 @@ aside{
     width: 26%;
   }
   @media only screen and (min-width: 768px){
-    float: right;
-    width: 66%;
+    float: left;
+    width: 32%;
   }
 }
 
@@ -105,6 +105,10 @@ article{
     }
   }
   margin-bottom: 3em;
+  @media only screen and (min-width: 768px){
+    float: right;
+    width: 66%;
+  }
 }
 
 .item{

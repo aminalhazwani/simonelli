@@ -846,39 +846,39 @@ a.e-mail {
 
 /* Project item */
 /* line 33, ../sass/_typography.scss */
-.work, .education {
+.work, .educational {
   width: 100%;
   margin: 0 0 2em 0;
 }
 @media only screen and (min-width: 600px) {
   /* line 33, ../sass/_typography.scss */
-  .work, .education {
+  .work, .educational {
     width: 48%;
   }
 }
 @media only screen and (min-width: 960px) {
   /* line 33, ../sass/_typography.scss */
-  .work, .education {
+  .work, .educational {
     width: 32%;
   }
 }
 /* line 42, ../sass/_typography.scss */
-.work .meta, .education .meta {
+.work .meta, .educational .meta {
   display: inline-block;
   width: 90%;
   margin: 0 0 0.3em;
 }
 /* line 46, ../sass/_typography.scss */
-.work .meta h3, .work .meta span, .work .meta data, .education .meta h3, .education .meta span, .education .meta data {
+.work .meta h3, .work .meta span, .work .meta data, .educational .meta h3, .educational .meta span, .educational .meta data {
   margin: 0;
   line-height: 1;
 }
 /* line 50, ../sass/_typography.scss */
-.work .meta.bottom, .education .meta.bottom {
+.work .meta.bottom, .educational .meta.bottom {
   margin: 0.8em 0 0.3em;
 }
 /* line 54, ../sass/_typography.scss */
-.work .arrow, .education .arrow {
+.work .arrow, .educational .arrow {
   display: inline-block;
   background-image: url(../images/arrow.png);
   width: 14px;
@@ -886,7 +886,7 @@ a.e-mail {
   margin-right: 0.3em;
 }
 /* line 60, ../sass/_typography.scss */
-.work .arrow.rotate, .education .arrow.rotate {
+.work .arrow.rotate, .educational .arrow.rotate {
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -894,7 +894,7 @@ a.e-mail {
 
 /* Figcaption item */
 /* line 70, ../sass/_typography.scss */
-.education figure, .work figure {
+.educational figure, .work figure {
   margin: 0;
   position: relative;
   border-bottom: 3px solid #063a80;
@@ -902,12 +902,12 @@ a.e-mail {
   overflow: hidden;
 }
 /* line 77, ../sass/_typography.scss */
-.education figure:hover img, .work figure:hover img {
+.educational figure:hover img, .work figure:hover img {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 /* line 81, ../sass/_typography.scss */
-.education figure:hover figcaption, .work figure:hover figcaption {
+.educational figure:hover figcaption, .work figure:hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
@@ -915,7 +915,7 @@ a.e-mail {
   transition: transform 0.4s, opacity 0.1s;
 }
 /* line 90, ../sass/_typography.scss */
-.education figure img, .work figure img {
+.educational figure img, .work figure img {
   width: 100%;
   display: block;
   position: relative;
@@ -923,7 +923,7 @@ a.e-mail {
   transition: transform 0.4s;
 }
 /* line 97, ../sass/_typography.scss */
-.education figure figcaption, .work figure figcaption {
+.educational figure figcaption, .work figure figcaption {
   position: absolute;
   padding: 0.5em 0 0.5em 1em;
   font-size: 0.8em;
@@ -995,7 +995,7 @@ a.e-mail {
 }
 @media only screen and (min-width: 768px) {
   /* line 39, ../sass/_header.scss */
-  .header-container .slicknav_menu {
+  .header-container .slicknav_menu, .header-container .contact {
     display: none;
   }
 }
@@ -1171,8 +1171,8 @@ aside .sidebar.fixed {
 @media only screen and (min-width: 768px) {
   /* line 59, ../sass/_container.scss */
   aside {
-    float: right;
-    width: 66%;
+    float: left;
+    width: 32%;
   }
 }
 
@@ -1194,18 +1194,25 @@ article p {
 article ul li p {
   margin: 0 0 0.25em;
 }
+@media only screen and (min-width: 768px) {
+  /* line 94, ../sass/_container.scss */
+  article {
+    float: right;
+    width: 66%;
+  }
+}
 
-/* line 111, ../sass/_container.scss */
+/* line 115, ../sass/_container.scss */
 .item a:hover {
   color: #063a80;
 }
 
-/* line 116, ../sass/_container.scss */
+/* line 120, ../sass/_container.scss */
 .grid-gutter {
   width: 2%;
 }
 @media only screen and (max-width: 960px) {
-  /* line 116, ../sass/_container.scss */
+  /* line 120, ../sass/_container.scss */
   .grid-gutter {
     width: 4%;
   }

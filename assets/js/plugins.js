@@ -8,10 +8,10 @@ $(document).ready(function () {
     });
 
     $( function(){
-        if($(".education").hasClass("bottom")){
-            $(".education a figure").insertBefore(".education a div.arrow");   
-            $(".education a div.arrow").toggleClass("rotate"); 
-            $(".education a div.meta").toggleClass("bottom");    
+        if($(".educational").hasClass("bottom")){
+            $(".educational a figure").insertBefore(".educational a div.arrow");   
+            $(".educational a div.arrow").toggleClass("rotate"); 
+            $(".educational a div.meta").toggleClass("bottom");    
         }
     });
 
