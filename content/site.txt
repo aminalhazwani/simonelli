@@ -2,7 +2,7 @@ Title: Simone Simonelli
 ----
 Author: Amin Al Hazwani
 ----
-Description: Product design and art direction
+Description: Simone Simonelli is a multidisciplinary designer crossing his activities between practice and educational activity (da defiinire). Praesent commodo cursus magna, vel scelerisque nisl
 ----
 Keywords: design, product, research, fabrication, arduino
 ----

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<h3 class="intro"><?php echo kirbytext($page->text()) ?></h3>
+<h3 class="intro"><?php echo html($site->description()) ?></h3>
 
 <div id="wrapper">
 

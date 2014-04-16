@@ -20,7 +20,7 @@
 	<aside>
 		<section>
 			<h3>Selected Online Press</h3>
-			<?php foreach($pages->find('/online')->children()->visible() as $article): ?>
+			<?php foreach($pages->find('/online-press')->children()->visible() as $article): ?>
 				<ul>
 					<!-- <a href="<?php echo $article->link() ?>"> -->
 						<li>
@@ -34,7 +34,7 @@
 
 		<section>
 			<h3>Selected Print Press</h3>
-			<?php foreach($pages->find('/press')->children()->visible() as $article): ?>
+			<?php foreach($pages->find('/print-press')->children()->visible() as $article): ?>
 				<ul>
 					<!-- <a href="<?php echo $article->images()->find('01.jpg')->url() ?>"> -->
 						<li>
