@@ -1,20 +1,36 @@
-title: Lungomare Gasthaus
+﻿Title: Lungomare Gasthaus
+
 ----
-tags: maybe, some additional, tags
+
+Date: 16.04.2014
+
 ----
-date: 08/22/2013
+
+Branch: work
+
 ----
-branch: work
+
+Category: exhibit
+
 ----
-category: exhibit
+
+Tags: maybe,some,tags
+
 ----
-manufacter: Lungomare
+
+Manufacter: Lungomare
+
 ----
-photo: Curzio Castellan
+
+Photo: Curzio Castellan
+
 ----
-materials: some, nice, new, materials
+
+Materials: some,nice,materials
+
 ----
-text: In June 2013, to celebrate the tenth-year anniversary of its founding, the project space Lungomare opened the Lungomare Gasthaus as a temporary space for thought and action. The Lungomare Gasthaus integrated the kitchen, a cultural and social place of production, with a one-month program consisting of discussions, conversations and workshops, a series of spatial interventions, a film program and a series of public performances and actions in the city of Bolzano.
+
+Text: In June 2013, to celebrate the tenth-year anniversary of its founding, the project space Lungomare opened the Lungomare Gasthaus as a temporary space for thought and action. The Lungomare Gasthaus integrated the kitchen, a cultural and social place of production, with a one-month program consisting of discussions, conversations and workshops, a series of spatial interventions, a film program and a series of public performances and actions in the city of Bolzano.
 
 I've been asked to design seats and tables for the temporary restaurant!
 

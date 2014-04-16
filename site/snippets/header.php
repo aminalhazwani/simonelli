@@ -11,8 +11,20 @@
     <link rel="icon" type="image/png" href="#">
     <!-- favicon ./assets/images/favicon.png link -->
 
+    <?php if($page->description() != ''): ?>
+    <meta name="description" content="<?php echo html($page->text()) ?>" />
+    <?php else: ?>
     <meta name="description" content="<?php echo html($site->description()) ?>" />
+    <?php endif ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <?php if($page->tags() != ''): ?>
+    <meta name="keywords" content="<?php foreach(str::split($page->tags()) as $tag): ?><?php echo $tag ?>, <?php endforeach ?>
+    <?php foreach(str::split($page->materials()) as $material): ?><?php echo $material ?>, <?php endforeach?>
+    <?php echo $page->manufacter() ?>, <?php echo $page->date('Y') ?>" />
+    <?php else: ?>
+    <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
+    <?php endif ?>
 
     <meta property="og:title" content="<?php echo html($site->title()) ?> - <?php echo html($page->title()) ?>" />
     <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />
@@ -24,9 +36,8 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <?php echo js('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') ?>
     <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
-
-    <?php echo js('assets/js/plugins.js') ?>
     <?php echo js('assets/js/vendor/jquery.slicknav.min.js') ?>
+    <?php echo js('assets/js/plugins.js') ?>
   </head>
 
   <body>

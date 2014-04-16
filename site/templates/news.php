@@ -28,7 +28,8 @@
 			<ul class="tags">
 				<?php foreach(str::split($page->tags()) as $tag): ?>
 					<li>
-						<a href="<?php echo url('news/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a>
+						<!-- <a href="<?php echo url('news/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a> -->
+						<p><?php echo $tag ?></p>
 					</li>
 				<?php endforeach ?>
 			</ul>
