@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
     <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="#">
+    <!-- favicon ./assets/images/favicon.png link -->
 
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +24,9 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <?php echo js('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') ?>
     <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
+
+    <?php echo js('assets/js/plugins.js') ?>
+    <?php echo js('assets/js/vendor/jquery.slicknav.min.js') ?>
   </head>
 
   <body>

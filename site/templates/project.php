@@ -48,8 +48,8 @@
 				<h3>Share</h3>
 				<ul>
 					<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page->url() ?>" target="_blank">Facebook</a></li>
-					<li><a href="https://twitter.com/intent/tweet?url=<?php echo $page->url() ?>text=<?php echo excerpt($page->text(), 100) ?>hashtags=hashtag1,hashtag2,hashtag3">Twitter</a></li>
-					<li><a href="">Google +</a></li>
+					<li><a href="https://twitter.com/intent/tweet?url=<?php echo $page->url() ?>&text=<?php echo excerpt($page->text(), 60) ?>&hashtags=hashtag1,hashtag2,hashtag3">Twitter</a></li>
+					<li><a href="http://pinterest.com/pin/create/button/?url=<?php echo $page->url() ?>&description=<?php echo excerpt($page->text(), 200) ?>&media=<?php echo $page->images()->first()->url() ?>">Pinterest</a></li>
 				</ul>
 			</section>
 		</div>
