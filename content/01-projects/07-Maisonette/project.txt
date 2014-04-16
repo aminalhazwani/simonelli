@@ -14,4 +14,6 @@ photo: Curzio Castellan
 ----
 materials: some, nice, new, materials
 ----
+orientation: bottom
+----
 text: "Maisonnette" in French means small house. The aim here has been to propose a collection of furnitures that meets the contemporary need of sharing functions in the microliving spaces. It is a 3 pieces set: a stand/miniwardrobe, a cart/table and a basket/tray. Materials: solid alder wood treated with natural varnish and iron rod structure.

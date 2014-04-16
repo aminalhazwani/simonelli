@@ -1,8 +1,7 @@
 <?php foreach($data->children()->visible() as $project): ?>
 
 
-	<div data-filter="<?php echo html($project->branch()) ?>" 
-		 class="item <?php echo html($project->branch()) ?> <?php echo html($project->orientation()) ?>">
+	<div id="" class="item <?php echo html($project->branch()) ?> <?php echo html($project->orientation()) ?>">
 
 		<a class="#" href="<?php echo $project->url() ?>">
 

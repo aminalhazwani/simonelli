@@ -1,8 +1,7 @@
 <?php foreach($data->children()->visible() as $educational): ?>
 
 
-	<div data-filter="<?php echo html($educational->branch()) ?>"
-		 class="item <?php echo html($educational->branch()) ?> <?php echo html($educational->orientation()) ?>">
+	<div class="item <?php echo html($educational->branch()) ?> <?php echo html($educational->orientation()) ?>">
 
 		<a class="#" href="<?php echo $educational->url() ?>">
 

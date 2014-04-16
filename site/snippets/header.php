@@ -8,13 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
     <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
-    
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:title" content="<?php echo html($site->title()) ?> - <?php echo html($page->title()) ?>" />
+    <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />
+    <meta property="og:url" content="<?php echo $page->url() ?>" />
+    <meta property="og:image" content="<?php if($page->hasImages()){echo $page->images()->first()->url();} else{echo url('assets/images/ogimage.jpg');} ?>" />
+
     <?php echo css('assets/css/main.css') ?>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <?php echo js('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') ?>
     <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
   </head>
@@ -28,8 +34,8 @@
         <h3 class="site-title"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h3>
         <nav>
           <ul id="menu">
-            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".work">work</a></h3></li>
-            <li><h3><a class="filter" href="<?php echo url() ?>" data-filter=".educational">educational</a></h3></li>
+            <li><h3><a class="filter" data-filter=".work">work</a></h3></li>
+            <li><h3><a class="filter" data-filter=".educational">educational</a></h3></li>
             <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
             <li><h3><a class="contact" href="<?php echo url() ?>contact">contact</a></h3></li>
             <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>
@@ -40,3 +46,4 @@
 
     <div class="main-container">
     <div class="main wrapper clearfix">
+

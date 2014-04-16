@@ -7,12 +7,20 @@ $(document).ready(function () {
         return false;
     });
 
+    // $( function(){
+    //     if($(".educational").hasClass("bottom")){
+    //         $(".educational a figure").insertBefore(".educational a div.arrow");   
+    //         $(".educational a div.arrow").toggleClass("rotate"); 
+    //         $(".educational a div.meta").toggleClass("bottom");    
+    //     }
+    // });
+
     $( function(){
-        if($(".educational").hasClass("bottom")){
-            $(".educational a figure").insertBefore(".educational a div.arrow");   
-            $(".educational a div.arrow").toggleClass("rotate"); 
-            $(".educational a div.meta").toggleClass("bottom");    
-        }
+            $.each($(".bottom"), function(i, val){
+                $(val.children[0].children[2]).insertBefore(val.children[0].children[0]);
+                $(val.children[0].children[1]).addClass("rotate");
+                $(val.children[0].children[2]).addClass("bottom");
+            })
     });
 
     $(function(){
@@ -32,6 +40,7 @@ $(document).ready(function () {
 
 });
 
+
 // Isotope
 $(window).load(function() {
     // init Isotope
@@ -45,23 +54,18 @@ $(window).load(function() {
     });
 
     // filters
-    // $('.filter').on( 'click', function() {
-    //   var filterValue = $(this).attr('data-filter');
-    //   $('#wrapper').isotope({ filter: filterValue });
-    // });
-
-     $('.filter').click(function(){ 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-         });
-         return false;
-    });
+    $('.filter').click(function(){ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            } 
+        });
+    return false
+    });
 
     // sorting
     $('#wrapper').isotope({

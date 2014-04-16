@@ -22,12 +22,12 @@
 			<h3>Selected Online Press</h3>
 			<?php foreach($pages->find('/online')->children()->visible() as $article): ?>
 				<ul>
-					<a href="<?php echo $article->link() ?>">
+					<!-- <a href="<?php echo $article->link() ?>"> -->
 						<li>
 							<span><?php echo html($article->website()) ?></span>
 							<span class="date"><?php echo $article->date('M. Y') ?></span>
 						</li>
-					</a>
+					<!-- </a> -->
 				</ul>
 			<?php endforeach ?>
 		</section>
@@ -36,12 +36,12 @@
 			<h3>Selected Print Press</h3>
 			<?php foreach($pages->find('/press')->children()->visible() as $article): ?>
 				<ul>
-					<a href="<?php echo $article->images()->find('01.jpg')->url() ?>">
+					<!-- <a href="<?php echo $article->images()->find('01.jpg')->url() ?>"> -->
 						<li>
 							<span><?php echo html($article->magazine()) ?></span>
 							<span class="date"><?php echo $article->date('M. Y') ?></span>
 						</li>
-					</a>
+					<!-- </a> -->
 				</ul>
 			<?php endforeach ?>
 		</section>
