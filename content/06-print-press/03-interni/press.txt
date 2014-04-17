@@ -1,4 +1,0 @@
-magazine: Interni
-----
-date: 8/26/2013
-----

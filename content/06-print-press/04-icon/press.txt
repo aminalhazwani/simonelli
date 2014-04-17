@@ -1,4 +1,0 @@
-magazine: Icon
-----
-date: 6/26/2012
-----

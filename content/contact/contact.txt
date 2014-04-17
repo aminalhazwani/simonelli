@@ -1,14 +1,1 @@
-Title: Contact
-----
-mail: studio@simonesimonelli.it
-----
-phone: +39 0471 015246
-----
-street: via venezia 44
-----
-city: 39100 Bolzano (BZ)
-----
-state: Italia
-----
-clients: miniforms, gibas, analogico/digitale 
-----
+title: contact

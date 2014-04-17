@@ -1,8 +1,6 @@
-title: Take-off Light
+title: At Casa
 ----
-website: Domus
-----
-date: 3/26/2014
+date: 1/26/2014
 ----
 link: https://www.domusweb.it/en/design/2014/03/26/take_off_light.html
 ----

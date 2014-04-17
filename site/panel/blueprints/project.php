@@ -9,25 +9,36 @@ fields:
   title: 
     label: Title
     type:  text
+    required: true
   date:
     label: Date
     type: date
     format: dd.mm.yy
+    required: true
   branch:
     label: Branch
     type: radio
     options:
-      work: work
-      educational: educational
-    default: firstValue
+      work: Work
+      educational: Educational
+    required: true
   category:
+    required: true
   	label: Category
   	type: text
+  orientation:
+    label: Info
+    type: radio
+    default: top
+    options:
+      top: Top
+      bottom: Bottom
   tags: 
     label: Tags
     type:  tags
     index: all
   manufacter:
+    required: true
   	label: Manufacter
   	type: text
   photo:

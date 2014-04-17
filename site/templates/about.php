@@ -19,25 +19,22 @@
 
 		<section>
 			<h3>Social</h3>
-			<ul>
-				<!-- <li><a href="">Facebook</a></li> -->
-				<li><a href="https://twitter.com/simosimonelli">Twitter</a></li>
-				<li><a href="http://instagram.com/ssimonelli">Instagram</a></li>
-				<!-- <li><a href="">Linkedin</a></li> -->
-			</ul>
+			<?php snippet('social')?>
 		</section>
 
-		<section>
-			<h3>Selected Clients</h3>
-			<ul>
-				<?php foreach(str::split($page->clients()) as $client): ?>
-					<li>
-						<!-- <a href="<?php echo url('blog/client:' . urlencode($client)) ?>"><?php echo $client ?></a> -->
-						<p><?php echo $client ?></p>
-					</li>
-				<?php endforeach ?>
-			</ul>
-		</section>
+		<?php if($page->clients() != ''): ?>
+			<section>
+				<h3>Selected Clients</h3>
+				<ul>
+					<?php foreach(str::split($page->clients()) as $client): ?>
+						<li>
+							<p><?php echo $client ?></p>
+						</li>
+					<?php endforeach ?>
+				</ul>
+			</section>
+		<?php endif ?>
+
 	</aside>
 
 <?php snippet('footer') ?>

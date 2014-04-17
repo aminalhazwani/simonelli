@@ -1,6 +1,4 @@
-title: Take-off Light
-----
-website: AT Casa
+title: Innder Design
 ----
 date: 1/26/2014
 ----

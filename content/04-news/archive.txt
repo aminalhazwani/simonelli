@@ -1,2 +1,1 @@
-title: News
-----
+﻿Title: News

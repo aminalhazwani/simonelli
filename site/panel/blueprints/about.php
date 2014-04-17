@@ -3,8 +3,8 @@
 # about blueprint
 
 title: Page
-pages: true
-files: true
+pages: false
+files: false
 fields:
   title: 
     label: Title
@@ -12,6 +12,7 @@ fields:
   mail:
     label: E-mail
     type: text
+    validate: email
   phone:
     label: Phone Number
     type: text

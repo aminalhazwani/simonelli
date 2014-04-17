@@ -14,7 +14,11 @@ Category: exhibit
 
 ----
 
-Tags: maybe,some,tags
+Orientation: bottom
+
+----
+
+Tags: maybe,some,additional
 
 ----
 

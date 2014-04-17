@@ -1,19 +1,32 @@
-Title: About
+﻿Title: About
+
 ----
-mail: studio@simonesimonelli.it
+
+Mail: studio@simonesimonelli.it
+
 ----
-phone: +39 0471 015246
+
+Phone: +39 0471 015246
+
 ----
-street: via venezia 44
+
+Street: via venezia 44
+
 ----
-city: 39100 Bolzano (BZ)
+
+City: 39100 Bolzano (BZ)
+
 ----
-state: Italia
+
+State: Italia
+
 ----
-clients: miniforms, gibas, analogico/digitale, careof, Plus Design Gallery, Valcucine, Promosedia, Lorenz spa
+
+Clients: miniforms,gibas,analogico/digitale,careof,Plus Design Gallery,Valcucine,Promosedia,Lorenz spa
+
 ----
-text: 
-### What I am 
+
+Text: ### What I am 
 Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
 
 ### What I do
@@ -24,5 +37,3 @@ Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo
 
 ### Collaborators
 Donec sed odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-

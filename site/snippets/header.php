@@ -9,17 +9,17 @@
   
     <title>
         <?php echo html($site->title()) ?>
-        <?php if($page->description() != ''): ?>
-         – <?php echo html($site->description()) ?>
+        <?php if($page->title() != ''): ?>
+         – <?php echo html($page->title()) ?>
         <?php else: ?>
-         - <?php echo html($page->title()) ?></title>
+         – <?php echo html($site->description()) ?>
         <?php endif ?>
-        
-    <link rel="icon" type="image/png" href="#">
-    <!-- favicon ./assets/images/favicon.png link -->
+    </title>
 
-    <?php if($page->description() != ''): ?>
-    <meta name="description" content="<?php echo html($page->text()) ?>" />
+    <link rel="icon" type="image/png" href="/assets/images/fav-i-con.png">
+
+    <?php if($page->text() != ''): ?>
+    <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />
     <?php else: ?>
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <?php endif ?>
@@ -27,14 +27,16 @@
 
     <?php if($page->tags() != ''): ?>
     <meta name="keywords" content="<?php foreach(str::split($page->tags()) as $tag): ?><?php echo $tag ?>, <?php endforeach ?>
-    <?php foreach(str::split($page->materials()) as $material): ?><?php echo $material ?>, <?php endforeach?>
-    <?php echo $page->manufacter() ?>, <?php echo $page->date('Y') ?>" />
     <?php else: ?>
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <?php endif ?>
 
     <meta property="og:title" content="<?php echo html($site->title()) ?> - <?php echo html($page->title()) ?>" />
+    <?php if($page->text() != ''): ?>
     <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />
+    <?php else: ?>
+    <meta property="og:description" content="<?php echo html($site->description()) ?>" />
+    <?php endif ?>
     <meta property="og:url" content="<?php echo $page->url() ?>" />
     <meta property="og:image" content="<?php if($page->hasImages()){echo $page->images()->first()->url();} else{echo url('assets/images/ogimage.jpg');} ?>" />
 

@@ -9,13 +9,19 @@ fields:
   title: 
     label: Title
     type:  text
+    required: true
   date:
     label: Date
     type: date
     format: dd.mm.yy
+    required: true
   category:
-  	label: Category
-  	type: text
+    label: Branch
+    type: select
+    options:
+      1: news
+    dafault: 1
+    required: true
   text: 
     label: Text
     type:  textarea

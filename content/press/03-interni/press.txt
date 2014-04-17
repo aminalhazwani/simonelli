@@ -1,0 +1,8 @@
+title: Interni
+----
+date: 8/26/2013
+----
+tags: some, nice, tags
+----
+text:
+----
