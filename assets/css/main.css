@@ -1210,19 +1210,23 @@ article ul li p {
     float: right;
     width: 66%;
   }
+  /* line 111, ../sass/_container.scss */
+  article ul {
+    margin-bottom: 6em;
+  }
 }
 
-/* line 115, ../sass/_container.scss */
+/* line 118, ../sass/_container.scss */
 .item a:hover {
   color: #063a80;
 }
 
-/* line 120, ../sass/_container.scss */
+/* line 123, ../sass/_container.scss */
 .grid-gutter {
   width: 2%;
 }
 @media only screen and (max-width: 960px) {
-  /* line 120, ../sass/_container.scss */
+  /* line 123, ../sass/_container.scss */
   .grid-gutter {
     width: 4%;
   }

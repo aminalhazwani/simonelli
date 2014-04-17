@@ -3,8 +3,8 @@
 	<h1 class="title"><?php echo $page->title() ?></h1>
 
 	<article>
-		<?php foreach($page->children()->visible()->flip()->limit(5) as $article): ?>
 		<ul>
+		<?php foreach($page->children()->visible()->flip()->limit(5) as $article): ?>
 			<a href="<?php echo $article->url() ?>">
 				<li>
 					<p><?php echo $article->date('l j F Y') ?></p>
@@ -13,8 +13,8 @@
 					<hr>
 				</li>
 			</a>
-		</ul>
 		<?php endforeach ?>
+		</ul>
 	</article>
 
 	<aside>
