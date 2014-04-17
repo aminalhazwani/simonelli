@@ -7,14 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
-    <title>
-        <?php echo html($site->title()) ?>
-        <?php if($page->title() != ''): ?>
-         – <?php echo html($page->title()) ?>
-        <?php else: ?>
-         – <?php echo html($site->description()) ?>
-        <?php endif ?>
-    </title>
+    <?php if($page->title() != ''): ?> 
+    <title><?php echo html($site->title()) ?> – <?php echo html($page->title()) ?></title>
+    <?php else: ?>
+    <title><?php echo html($site->title()) ?> – <?php echo html($site->description()) ?></title>
+    <?php endif ?>
 
     <link rel="icon" type="image/png" href="/assets/images/fav-i-con.png">
 
