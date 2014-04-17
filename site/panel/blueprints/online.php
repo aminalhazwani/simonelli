@@ -7,7 +7,7 @@ pages: false
 files: false
 fields:
   title: 
-    label: Title (Name of the website)
+    label: Website name
     type:  text
   date:
     label: Date

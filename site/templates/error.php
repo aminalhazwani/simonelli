@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-	<h1 class="title"><?php echo $page->title() ?></h1>
+	<h1 class="title"><?php echo markdown($page->text()) ?></h1>
 	<article>
 		I can’t find <code><?php echo thisURL() ?></code>. 
 	</br>

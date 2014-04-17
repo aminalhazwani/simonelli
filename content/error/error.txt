@@ -1,1 +1,3 @@
-Title: This isn’t the thing you’re looking for.
+Title: Error
+----
+text: This isn’t the thing you’re looking for.

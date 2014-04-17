@@ -7,7 +7,7 @@ pages: false
 files: true
 fields:
   title: 
-    label: Title (Name of the magazine)
+    label: Magazine name
     type:  text
   date:
     label: Date
