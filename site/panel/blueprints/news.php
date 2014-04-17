@@ -19,8 +19,8 @@ fields:
     label: Branch
     type: select
     options:
-      1: news
-    dafault: 1
+      news: news
+    dafault: news
     required: true
   text: 
     label: Text

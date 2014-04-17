@@ -9,3 +9,7 @@ fields:
   title: 
     label: Title
     type:  text
+filefields: 
+  caption: 
+    label: Caption
+    type:  text

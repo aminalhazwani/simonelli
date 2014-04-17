@@ -13,6 +13,10 @@ fields:
     label: E-mail
     type: text
     validate: email
+  mailintern:
+    label: E-mail Intership
+    type: text
+    validate: email
   phone:
     label: Phone Number
     type: text

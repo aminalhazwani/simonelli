@@ -32,14 +32,20 @@
     <?php endif ?>
 
     <meta property="og:title" content="<?php echo html($site->title()) ?> - <?php echo html($page->title()) ?>" />
+    
     <?php if($page->text() != ''): ?>
     <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />
     <?php else: ?>
     <meta property="og:description" content="<?php echo html($site->description()) ?>" />
     <?php endif ?>
+    
     <meta property="og:url" content="<?php echo $page->url() ?>" />
-    <meta property="og:image" content="<?php if($page->hasImages()){echo $page->images()->first()->url();} else{echo url('assets/images/ogimage.jpg');} ?>" />
-
+    
+    <?php if($page->hasImages()): ?>
+    <meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
+    <?php else: ?>
+    <meta property="og:image" content="<?php echo $pages->find('/projects')->children()->last()->images()->first()->url() ?>" />
+    <?php endif ?>
     <?php echo css('assets/css/main.css') ?>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
