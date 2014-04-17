@@ -28,7 +28,6 @@ $(document).ready(function () {
             label: 'Simone Simonelli',
             prependTo:'header',
             open : function (trigger){
-                console.log($(trigger).next().children("li").length);
                     var numElem = $(trigger).next().children("li").length;
                     $(trigger).next().children("li").each(function( index ) {
                         var opacityValue = (index ) * (1) / (numElem);

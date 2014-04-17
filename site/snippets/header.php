@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php if($page->tags() != ''): ?>
-    <meta name="keywords" content="<?php foreach(str::split($page->tags()) as $tag): ?><?php echo $tag ?>, <?php endforeach ?>
+    <meta name="keywords" content="<?php foreach(str::split($page->tags()) as $tag): ?><?php echo $tag ?>, <?php endforeach ?>" />
     <?php else: ?>
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <?php endif ?>
@@ -53,20 +53,18 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="header-container">
-      <header class="wrapper clearfix">
-        <h3 class="site-title"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h3>
-        <nav>
-          <ul id="menu">
-            <li><h3><a class="filter" data-filter=".work">work</a></h3></li>
-            <li><h3><a class="filter" data-filter=".educational">educational</a></h3></li>
-            <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
-            <li><h3><a class="contact" href="<?php echo url() ?>contact">contact</a></h3></li>
-            <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>
-          </ul>
-        </nav>  
+      <header class="clearfix">
+        <div class="wrapper">
+            <h3 class="site-title"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h3>
+            <ul id="menu" class="nav">
+                <li><h3><a class="filter" data-filter=".work">work</a></h3></li>
+                <li><h3><a class="filter" data-filter=".educational">educational</a></h3></li>
+                <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
+                <li class="contact"><h3><a href="<?php echo url() ?>contact">contact</a></h3></li>
+                <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>
+            </ul> 
+        </div>
       </header>
-    </div>
 
     <div class="main-container">
     <div class="main wrapper clearfix">

@@ -1,7 +1,7 @@
-.header-container{
+header{
     background-color: $white;
+    height: 63px;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 3;
     .site-title{
@@ -13,31 +13,31 @@
     		float: left;
     	}
     }
-    nav{
+    .nav{
     	display: none;
     	@media only screen and (min-width: 768px) {
     		display: block;
 		    float: right;
 		    width: 66%;
-		}
-	    ul{
-	    	margin: 0;
-	    	padding: 0;
-	    	li h3{
-	    		font-weight: normal; 
-	    		margin: 1em 0;
-	    		padding: 0;
-	    		a{
-			    	float: left;
-			    	margin-right: 6%;
-			    	display: block;
-			    	cursor: pointer;
+		    li{
+		    	display: inline-block;
+		    	margin: 0 6% 0 0;
+		    	h3{
+		    		font-weight: normal; 
+	    			margin: 1em 0;
+	    			padding: 0;
+		    		a{
+				    	float: left;
+				    	margin-right: 6%;
+				    	display: block;
+				    	cursor: pointer;
+			    	}
 		    	}
-	    	}
-	    }
+		    }
+		}
 	}
 	@media only screen and (min-width: 768px) {
-		.slicknav_menu, .contact{
+		.slicknav_menu, li.contact{
 			display: none;
 		}
 	}
@@ -66,6 +66,7 @@ nav ul li {
 		font-weight: bold;
 	}
 	.slicknav_nav{
+		background-color: #fff;
 		li{
 			h3{
 				margin: 0;

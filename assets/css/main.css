@@ -944,59 +944,59 @@ a.e-mail {
 
 /* Fixed elements */
 /* line 1, ../sass/_header.scss */
-.header-container {
+header {
   background-color: #f9fafd;
+  height: 63px;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 3;
 }
 /* line 7, ../sass/_header.scss */
-.header-container .site-title {
+header .site-title {
   display: none;
   float: left;
 }
 @media only screen and (min-width: 768px) {
   /* line 7, ../sass/_header.scss */
-  .header-container .site-title {
+  header .site-title {
     display: block;
     width: 32%;
     float: left;
   }
 }
 /* line 16, ../sass/_header.scss */
-.header-container nav {
+header .nav {
   display: none;
 }
 @media only screen and (min-width: 768px) {
   /* line 16, ../sass/_header.scss */
-  .header-container nav {
+  header .nav {
     display: block;
     float: right;
     width: 66%;
   }
-}
-/* line 23, ../sass/_header.scss */
-.header-container nav ul {
-  margin: 0;
-  padding: 0;
-}
-/* line 26, ../sass/_header.scss */
-.header-container nav ul li h3 {
-  font-weight: normal;
-  margin: 1em 0;
-  padding: 0;
-}
-/* line 30, ../sass/_header.scss */
-.header-container nav ul li h3 a {
-  float: left;
-  margin-right: 6%;
-  display: block;
-  cursor: pointer;
+  /* line 22, ../sass/_header.scss */
+  header .nav li {
+    display: inline-block;
+    margin: 0 6% 0 0;
+  }
+  /* line 25, ../sass/_header.scss */
+  header .nav li h3 {
+    font-weight: normal;
+    margin: 1em 0;
+    padding: 0;
+  }
+  /* line 29, ../sass/_header.scss */
+  header .nav li h3 a {
+    float: left;
+    margin-right: 6%;
+    display: block;
+    cursor: pointer;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* line 40, ../sass/_header.scss */
-  .header-container .slicknav_menu, .header-container .contact {
+  header .slicknav_menu, header li.contact {
     display: none;
   }
 }
@@ -1027,17 +1027,21 @@ nav ul li {
   font-size: 19px;
   font-weight: bold;
 }
-/* line 70, ../sass/_header.scss */
+/* line 68, ../sass/_header.scss */
+.slicknav_menu .slicknav_nav {
+  background-color: #fff;
+}
+/* line 71, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 {
   margin: 0;
 }
-/* line 72, ../sass/_header.scss */
+/* line 73, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 a {
   color: #fff;
   display: block;
   padding: 1.15em 4%;
 }
-/* line 80, ../sass/_header.scss */
+/* line 81, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon {
   float: right;
   display: block;
@@ -1045,7 +1049,7 @@ nav ul li {
   width: 20px;
   height: 24px;
 }
-/* line 86, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon span.slicknav_icon-bar {
   background-color: #063a80;
   width: 20px;
