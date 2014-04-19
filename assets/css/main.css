@@ -905,13 +905,14 @@ a.e-mail {
   border-bottom: 3px solid #063a80;
   width: 100%;
   overflow: hidden;
+  background-color: #063a80;
 }
-/* line 77, ../sass/_typography.scss */
+/* line 78, ../sass/_typography.scss */
 .educational figure:hover img, .work figure:hover img {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-/* line 81, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 .educational figure:hover figcaption, .work figure:hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -919,7 +920,7 @@ a.e-mail {
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s;
 }
-/* line 90, ../sass/_typography.scss */
+/* line 91, ../sass/_typography.scss */
 .educational figure img, .work figure img {
   width: 100%;
   display: block;
@@ -927,7 +928,7 @@ a.e-mail {
   -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
 }
-/* line 97, ../sass/_typography.scss */
+/* line 98, ../sass/_typography.scss */
 .educational figure figcaption, .work figure figcaption {
   position: absolute;
   padding: 0.5em 0 0.5em 1em;

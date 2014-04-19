@@ -13,7 +13,7 @@
     <title><?php echo html($site->title()) ?> – <?php echo html($site->description()) ?></title>
     <?php endif ?>
 
-    <link rel="icon" type="image/png" href="/assets/images/fav-i-con.png">
+    <link rel="icon" type="image/png" href="<?php echo url() ?>/assets/images/fav-i-con.png">
 
     <?php if($page->text() != ''): ?>
     <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />
@@ -28,7 +28,7 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <?php endif ?>
 
-    <meta property="og:title" content="<?php echo html($site->title()) ?> - <?php echo html($page->title()) ?>" />
+    <meta property="og:title" content="<?php echo html($page->title()) ?> – <?php echo html($site->title()) ?>" />
     
     <?php if($page->text() != ''): ?>
     <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />

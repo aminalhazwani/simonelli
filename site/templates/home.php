@@ -5,8 +5,8 @@
 <div id="wrapper">
 
 	<?php 
-		foreach($pages->visible() as $section) {
-			snippet($section->uid(), array('data' => $section));
+		foreach($pages->visible()->without('online')->without('press') as $section) {
+		  snippet($section->uid(), array('data' => $section));
 		}
 	?>
 

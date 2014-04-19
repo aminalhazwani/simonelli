@@ -73,6 +73,7 @@
 		border-bottom: 3px solid $blue;
 		width: 100%;
 		overflow: hidden;
+		background-color: $blue;
 		&:hover{
 			img{
 				-webkit-transform: translateY(-10px);

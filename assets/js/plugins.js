@@ -7,14 +7,6 @@ $(document).ready(function () {
         return false;
     });
 
-    // $( function(){
-    //     if($(".educational").hasClass("bottom")){
-    //         $(".educational a figure").insertBefore(".educational a div.arrow");   
-    //         $(".educational a div.arrow").toggleClass("rotate"); 
-    //         $(".educational a div.meta").toggleClass("bottom");    
-    //     }
-    // });
-
     $( function(){
             $.each($(".bottom"), function(i, val){
                 $(val.children[0].children[2]).insertBefore(val.children[0].children[0]);
@@ -43,7 +35,7 @@ $(document).ready(function () {
 // Isotope
 $(window).load(function() {
     // init Isotope
-    var $container = $('#wrapper').isotope({
+    var $container = $('#wrapper').fadeIn(1000).isotope({
         itemSelector: '.item',
         layoutMode: 'masonry',
         masonry: {
