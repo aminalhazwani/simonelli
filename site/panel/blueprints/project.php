@@ -41,6 +41,9 @@ fields:
     required: true
   	label: Manufacter
   	type: text
+  manufacterurl:
+    label: Manufacter Url
+    type: text
   photo:
   	label: Photographer
   	type: text

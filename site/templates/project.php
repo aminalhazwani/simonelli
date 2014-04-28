@@ -20,7 +20,11 @@
 			<section>
 				<h3>Producer and release</h3>
 				<ul>
+					<?php if($page->manufacterurl() != ''): ?>
+					<li><a href="<?php echo $page->manufacterurl() ?>"><?php echo $page->manufacter() ?></a></li>
+					<?php else: ?>
 					<li><?php echo $page->manufacter() ?></li>
+					<?php endif?>
 					<li><?php echo $page->date('Y') ?></li>
 				</ul>
 			</section>

@@ -1019,43 +1019,55 @@ nav ul li {
 }
 
 /* Mobile Navigation */
-/* line 57, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
+.slicknav_menu {
+  height: 100%;
+}
+/* line 58, ../sass/_header.scss */
+.slicknav_menu .btn_home {
+  position: fixed;
+  top: 0;
+  margin-left: 4%;
+}
+/* line 64, ../sass/_header.scss */
 .slicknav_menu .slicknav_btn {
   display: block;
-  padding: 1.15em 4%;
+  height: 100%;
 }
-/* line 60, ../sass/_header.scss */
+/* line 67, ../sass/_header.scss */
 .slicknav_menu .slicknav_btn:hover {
   color: #063a80;
 }
-/* line 64, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 .slicknav_menu .slicknav_menutxt {
   font-size: 19px;
   font-weight: bold;
 }
-/* line 68, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav {
   background-color: #fff;
 }
-/* line 71, ../sass/_header.scss */
+/* line 78, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 {
   margin: 0;
 }
-/* line 73, ../sass/_header.scss */
+/* line 80, ../sass/_header.scss */
 .slicknav_menu .slicknav_nav li h3 a {
   color: #fff;
   display: block;
   padding: 1.15em 4%;
 }
-/* line 81, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon {
   float: right;
   display: block;
   margin-top: 2px;
+  padding-top: 18px;
+  margin-right: 4%;
   width: 20px;
   height: 24px;
 }
-/* line 87, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 .slicknav_menu .slicknav_icon span.slicknav_icon-bar {
   background-color: #063a80;
   width: 20px;
