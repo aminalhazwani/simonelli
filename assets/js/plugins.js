@@ -18,6 +18,7 @@ $(document).ready(function () {
     $(function(){
         $('#menu').slicknav({
             label: '',
+            closeOnClick: 'true',
             prependTo:'header',
             open : function (trigger){
                     var numElem = $(trigger).next().children("li").length;
