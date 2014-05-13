@@ -25,4 +25,3 @@
 	<div class="grid-gutter"></div>
 
 <?php endforeach ?>
-

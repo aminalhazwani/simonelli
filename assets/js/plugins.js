@@ -45,31 +45,28 @@ $(window).load(function() {
         }
     });
 
-
-    $.param({ filter: '.work' })
-    $.param({ filter: '.educational' })
-
-    $('.filter').click(function(){
-          // get href attr, remove leading #
-      var href = $(this).attr('href').replace( /^#/, '' );
-          // convert href into object
-          // i.e. 'filter=.work' -> { filter: '.work' }
-          console.log(href);
-       var  option = $.deparam( href, true );
-      // set hash, triggers hashchange on window
-      $.bbq.pushState( option );
-      return false;
+    var $container = $('.container').fadeIn(1000).isotope({
+        itemSelector: '.edu-item',
+        layoutMode: 'masonry',
+        masonry: {
+          columnWidth: '.edu-item',
+          gutter: '.edu-gutter'
+        }
     });
 
-    $(window).bind( 'hashchange', function( event ){
-    // get options object from hash
-    var hashOptions = $.deparam.fragment();
-    // apply options from hash
-    $('#wrapper').isotope( hashOptions );
-    })
-    // trigger hashchange to capture any hash data on init
-    .trigger('hashchange');
-
+    // filters
+    $('.filter').click(function(){ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            } 
+        });
+    return false
+    });
 
     // sorting
     $('#wrapper').isotope({
@@ -81,7 +78,6 @@ $(window).load(function() {
         sortAscending: false,
         sortBy : 'date'
     });
-
 
     $('#wrapper')
         .isotope('updateSortData')
