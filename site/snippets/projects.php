@@ -18,7 +18,6 @@
 			    	<span><?php echo html($project->category()) ?></span>
 			    </figcaption>
 		    </figure>
-
 		</a>
 
 	</div>
@@ -26,5 +25,3 @@
 
 
 <?php endforeach ?>
-
-

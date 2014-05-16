@@ -38,6 +38,10 @@ body {
     .edu-item{
       width: 48%;
       margin-bottom: 1.5em;
+      cursor: pointer;
+      &.large{
+        width: 100%;
+      }
       @media only screen and (max-width: 480px){
         width: 100%;
       }

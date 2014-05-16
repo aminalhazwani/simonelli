@@ -6,14 +6,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
-    <?php if($page->title() != ''): ?> 
+
+    <?php if($page->title() != ''): ?>
     <title><?php echo html($site->title()) ?> – <?php echo html($page->title()) ?></title>
     <?php else: ?>
     <title><?php echo html($site->title()) ?> – <?php echo html($site->description()) ?></title>
     <?php endif ?>
 
-    <link rel="icon" type="image/png" href="<?php echo url() ?>/assets/images/fav-i-con.png">
+    <link rel="icon" type="image/png" href="<?php echo url() ?>/assets/images/favicon.png">
 
     <?php if($page->text() != ''): ?>
     <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />
@@ -29,15 +29,15 @@
     <?php endif ?>
 
     <meta property="og:title" content="<?php echo html($page->title()) ?> – <?php echo html($site->title()) ?>" />
-    
+
     <?php if($page->text() != ''): ?>
     <meta property="og:description" content="<?php echo excerpt($page->text(), 150) ?>" />
     <?php else: ?>
     <meta property="og:description" content="<?php echo html($site->description()) ?>" />
     <?php endif ?>
-    
+
     <meta property="og:url" content="<?php echo $page->url() ?>" />
-    
+
     <?php if($page->hasImages()): ?>
     <meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
     <?php else: ?>
@@ -49,6 +49,7 @@
     <?php echo js('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') ?>
     <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
     <?php echo js('assets/js/vendor/jquery.slicknav.min.js') ?>
+    <?php echo js('assets/js/vendor/imagesloaded.pkgd.min.js') ?>
     <?php echo js('assets/js/plugins.js') ?>
   </head>
 
@@ -65,10 +66,9 @@
                 <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
                 <li class="contact"><h3><a href="<?php echo url() ?>contact">contact</a></h3></li>
                 <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>
-            </ul> 
+            </ul>
         </div>
       </header>
 
     <div class="main-container">
     <div class="main wrapper clearfix">
-
