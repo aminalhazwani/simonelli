@@ -30,6 +30,36 @@ $(document).ready(function () {
         });
     });
 
+    //fixed sidebar
+    fixit = function(){
+      if ($(window).width() >= 768){
+        $('aside').addClass("fixed");
+        if($('.fixed').height() + 190 > $(window).height()){
+          console.log("Sidebar is LONGER than browser height");
+        }
+        else{
+          console.log("Sidebar is SHORTER than browser height");
+          $(function(){
+            var stickyTop = $('.fixed').offset().top; // returns number 
+            $(window).scroll(function(){ // scroll event  
+              var windowTop = $(window).scrollTop(); // returns number
+              if (stickyTop < windowTop + 60) {
+                $('.fixed').css({ position: 'fixed', top: 60 });
+              }
+              else {
+                $('.fixed').css('position','static');
+              }
+            });
+          });
+        }
+      }
+      else {
+        $('aside').removeClass("fixed");
+      }
+    }
+    $(document).ready(fixit);
+    $(window).bind('resize', fixit);
+        
 });
 
 
@@ -74,13 +104,13 @@ $(window).load(function() {
         .isotope('updateSortData')
         .isotope();
 
-    //make educational images big onClick
+    //make educational images masonry
     $(function(){
       var $container = $('.container')
           $items = $container.find('.edu-item');
 
       // trigger Isotope after images have loaded
-      $('.container').isotope({
+      $container.isotope({
           itemSelector: '.edu-item',
           layoutMode: 'masonry',
           masonry: {
@@ -88,39 +118,6 @@ $(window).load(function() {
             gutter: '.edu-gutter'
           }
       });
-
-      // shows the large version of the image
-      // shows small version of previously large image
-      function enlargeImage( $item ) {
-        $items.filter('.large').removeClass('large');
-        $item.addClass('large');
-        $('.container').isotope();
-      }
-
-    $items.click( function() {
-      var $this = $(this),
-          $item = $this.parents('edu.item');
-
-      if ( $item.hasClass('large') ) {
-        // already large, just remove
-        $item.removeClass('large');
-        $('.container').isotope();
-        }
-      else {
-          if ( $item.hasClass('has-big-image') ) {
-            enlargeImage( $item );
-            $('html,body').animate({ scrollTop: $(this).offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 200);
-          }
-          else {
-          // give it a wrapper and appended it to element
-          enlargeImage( $this );
-          $('html,body').animate({ scrollTop: $(this).offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 200);
-
-          // add a class, so we'll know not to do this next time
-          $item.addClass('has-big-image');
-          }
-      }
-      return false;
-      });
     });
+
 });

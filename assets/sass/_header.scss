@@ -9,7 +9,7 @@ header{
     	float: left;
     	@media only screen and (min-width: 768px) {
     		display: block;
-    		width: 32%;
+    		width: 270px;
     		float: left;
     	}
     }
@@ -17,8 +17,8 @@ header{
     	display: none;
     	@media only screen and (min-width: 768px) {
     		display: block;
-		    float: right;
-		    width: 66%;
+		    float: left;
+		    width: calc(100% - 270px);
 		    li{
 		    	display: inline-block;
 		    	margin: 0 6% 0 0;

@@ -31,14 +31,38 @@ body {
   }
   article{
     margin-top: 1.2em;
+    @media only screen and (min-width: 768px){
+
+    }
+    ul li{
+      margin-bottom: 2em;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     img{
       width: 100%;
-      margin-bottom: 2em;
+    }
+    .container{
+      li {
+        img{
+        margin-bottom: 1.5em;
+        }
+        &:last-child{
+          img{
+            margin-top: 1.5em;
+            margin-bottom: 0;
+          }
+        }
+        &:nth-last-child(2){
+          img{
+            margin-bottom: 0;
+          }
+        }
+      }
     }
     .edu-item{
       width: 48%;
-      margin-bottom: 1.5em;
-      cursor: pointer;
       &.large{
         width: 100%;
       }
@@ -62,7 +86,7 @@ body {
   color: $red;
   line-height: 1.2;
   @media only screen and (min-width: 768px){
-    margin: 4em 0 0 34%;
+    margin: 4em 0 0 270px;
   }
 }
 
@@ -89,26 +113,33 @@ aside{
       float: right;
     }
   }
-  .sidebar.fixed{
-    position: fixed;
-    top: 80px;
-    width: inherit;
-    width: 26%;
-  }
   @media only screen and (min-width: 768px){
     float: left;
-    width: 32%;
+    width: 250px;
   }
 }
 
 /* Content */
 article{
-  h3, h2{
+  h3{
     color: $red;
-    margin: 0 0 0.25em;
+    margin: 0;
+  }
+  h2{
+    color: $red;
+    margin: 0 0 0.25em 0;
   }
   p{
     margin: 0 0 1.5em;
+    @media only screen and (max-width: 768px){
+      font-size: 1.15em;
+    }
+    @media only screen and (min-width: 960px){
+      font-size: 1.15em;
+    }
+    @media only screen and (max-width: 600px){
+      font-size: 1em;
+    }
   }
   ul li{
     p{
@@ -118,7 +149,9 @@ article{
   margin-bottom: 3em;
   @media only screen and (min-width: 768px){
     float: right;
-    width: 66%;
+    width: calc(100% - 270px);
+    margin-left: 20px;
+    margin-bottom: 10em;
     ul{
       margin-bottom: 6em;
     }
