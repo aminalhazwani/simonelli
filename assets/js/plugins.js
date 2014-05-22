@@ -68,6 +68,18 @@ $(document).ready(function () {
       $(window).bind('resize', fixit);
       $(window).bind('scroll', fixit);
     }
+
+  text = function(){
+    if ( $(document).height() <= $(window).height() ){
+      $('footer span').css('display', 'none');
+    }
+    else{
+      $('footer span').css('display', 'block');
+    }
+  };
+  $(document).ready(text);
+  $(window).bind('resize', text);
+  $(window).bind('scroll', text);
         
 });
 
