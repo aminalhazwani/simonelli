@@ -1,4 +1,4 @@
-﻿Title: About
+Title: About
 
 ----
 
@@ -26,7 +26,7 @@ State: Italia
 
 ----
 
-Clients: miniforms,gibas,analogico/digitale,careof,Plus Design Gallery,Valcucine,Promosedia,Lorenz spa
+Clients: 
 
 ----
 

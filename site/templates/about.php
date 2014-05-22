@@ -3,7 +3,7 @@
 
 	<h1 class="title"><?php echo $page->title() ?></h1>
 	
-	<article>
+	<article class="about-text">
 		<?php if($page->hasImages()): ?> 
 			<ul>
 			  <?php foreach($page->images() as $image): ?>

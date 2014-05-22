@@ -48,12 +48,8 @@ body {
         background-image: url('../images/loading.gif');
         background-position: center;
         background-repeat: no-repeat;
-        width: 48%;
-        min-height: 200px;
-        margin: 0;
-        position: relative;
         .edu-item{
-          width: 100%;
+          width: 48%;
           display: block;
           margin-bottom: 1.5em;
           @media only screen and (max-width: 480px){
@@ -61,7 +57,7 @@ body {
           }
       }
       &.is-loaded {
-        background-image: none;
+        background-image: none !important;
         img {
           @include opacity(1.0);
         }
@@ -154,6 +150,9 @@ article{
     ul{
       margin-bottom: 10em;
     }
+  }
+  &.about-text{
+    margin-bottom: 8em;
   }
 }
 
