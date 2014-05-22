@@ -2,17 +2,17 @@
 
 	<h1 class="title"><?php echo $page->title() ?></h1>
 	<article>
-		<?php echo markdown($page->text()) ?>
+			<?php echo markdown($page->text()) ?>
 
-		<?php if($page->hasImages()): ?> 
-		<ul>
-		  <?php foreach($page->images() as $image): ?>
-		  <li>
-		  	<img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
-		  </li>
-		  <?php endforeach ?>
-		</ul>
-		<?php endif ?>
+			<?php if($page->hasImages()): ?> 
+			<ul>
+			  <?php foreach($page->images() as $image): ?>
+			  <li>
+			  	<img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
+			  </li>
+			  <?php endforeach ?>
+			</ul>
+			<?php endif ?>
 	</article>
 
 	<aside>

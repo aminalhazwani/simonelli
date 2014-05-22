@@ -74,8 +74,13 @@
 		position: relative;
 		border-bottom: 3px solid $blue;
 		width: 100%;
+		min-height: 200px;
 		overflow: hidden;
-		background-color: $blue;
+
+		background-image: url('../images/loading.gif');
+		background-position: center;
+		background-repeat: no-repeat;
+		
 		&:hover{
 			img{
 				-webkit-transform: translateY(-10px);
@@ -96,6 +101,7 @@
 			position: relative;
 			-webkit-transition: -webkit-transform 0.4s;
 			transition: transform 0.4s;
+			@include opacity(0.0);
 		}
 		figcaption{
 			position: absolute;
@@ -115,6 +121,14 @@
 			transform: translateY(100%);
 			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
 			transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
+
+		&.is-loaded {
+			background-image: none;
+
+			img {
+				@include opacity(1.0);
+			}
 		}
 	}
 }

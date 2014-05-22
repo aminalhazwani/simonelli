@@ -50,6 +50,7 @@
     <?php echo js('assets/js/vendor/isotope.pkgd.min.js') ?>
     <?php echo js('assets/js/vendor/jquery.slicknav.min.js') ?>
     <?php echo js('assets/js/vendor/imagesloaded.pkgd.min.js') ?>
+    <?php echo js('assets/js/vendor/jquery.history.js') ?>
     <?php echo js('assets/js/plugins.js') ?>
   </head>
 
@@ -59,10 +60,10 @@
     <![endif]-->
       <header class="clearfix">
         <div class="wrapper">
-            <h3 class="site-title"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h3>
+            <h3 class="site-title"><a class="filter" href="<?php echo url() ?>" data-filter="*"><?php echo html($site->title()) ?></a></h3>
             <ul id="menu" class="nav">
-                <li><h3><a class="filter" data-filter=".work">work</a></h3></li>
-                <li><h3><a class="filter" data-filter=".educational">educational</a></h3></li>
+                <li><h3><a class="filter" href="<?php echo url() ?>work" data-filter=".work">work</a></h3></li>
+                <li><h3><a class="filter" href="<?php echo url() ?>edu" data-filter=".educational">educational</a></h3></li>
                 <li><h3><a href="<?php echo url() ?>about">about</a></h3></li>
                 <li class="contact"><h3><a href="<?php echo url() ?>contact">contact</a></h3></li>
                 <li><h3><a href="<?php echo url() ?>news">news</a></h3></li>

@@ -5,8 +5,15 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2){ 
   
   .arrow{
-    background-image: url(../images/arrow@2x.png) !important;
+    background-image: url('../images/arrow@2x.png') !important;
     background-size: 14px 32px;
+  }
+
+  .container li, 
+  .educational figure, 
+  .work figure{
+  	background-image: url('../images/loading@2x.gif') !important;
+  	background-size: 64px 64px;
   }
 
 }

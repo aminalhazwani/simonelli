@@ -30,64 +30,76 @@ $(document).ready(function () {
         });
     });
 
-    //fixed sidebar
-    fixit = function(){
-      if ($(window).width() >= 768){
-        $('aside').addClass("fixed");
-        if($('.fixed').height() + 190 > $(window).height()){
-          console.log("Sidebar is LONGER than browser height");
-        }
-        else{
-          console.log("Sidebar is SHORTER than browser height");
-          $(function(){
-            var stickyTop = $('.fixed').offset().top; // returns number 
-            $(window).scroll(function(){ // scroll event  
+    if ($('aside').length == 1) {
+      //fixed sidebar
+      fixit = function(){
+        if ($(window).width() >= 768){
+          $('aside').addClass("fixed");
+          if ($('.fixed').height() + 38 + 112 > $(window).height()){
+            console.log("Sidebar is LONGER than browser height");
+            console.log($('.fixed').height() + 38 + 112);
+            console.log($(window).height());
+            console.log($(window).scrollTop());
+            if (($('.fixed').height() + 38 + 112 + 112 - $(window).height()) < $(window).scrollTop() ) {
+                //$('.fixed').css({ position: 'fixed', top: $(window).scrollTop() - ($('.fixed').height() - $(window).height()) });
+                $('.fixed').css({ position: 'fixed', bottom: 0, top: 'auto' });
+              }
+            else {
+                $('.fixed').css('position','static');
+            }
+          }
+          else{
+            console.log("Sidebar is SHORTER than browser height");
+              var stickyTop = $('.fixed').offset().top; // returns number 
               var windowTop = $(window).scrollTop(); // returns number
-              if (stickyTop < windowTop + 60) {
-                $('.fixed').css({ position: 'fixed', top: 60 });
+              if ( windowTop > 106) {
+                $('.fixed').css({ position: 'fixed', top: 60, bottom: 'auto' });
               }
               else {
                 $('.fixed').css('position','static');
               }
-            });
-          });
+          }
+        }
+        else {
+          $('aside').removeClass("fixed");
         }
       }
-      else {
-        $('aside').removeClass("fixed");
-      }
+      $(document).ready(fixit);
+      $(window).bind('resize', fixit);
+      $(window).bind('scroll', fixit);
     }
-    $(document).ready(fixit);
-    $(window).bind('resize', fixit);
         
 });
 
 
-// Isotope
-$(window).load(function() {
+// Isotope for homepage
+$(document).ready(function() {
+    if ($('#wrapper').length == 0) {
+      return;
+    }
+
+    $('#wrapper .item figure img').each(function() {
+      $(this).closest('figure').imagesLoaded(function(instance) {
+        $(instance.elements).addClass('is-loaded');
+        $('#wrapper').isotope('layout');
+      });
+    });
+
     // init Isotope
-    var $container = $('#wrapper').isotope({
+    var options = {
         itemSelector: '.item',
         layoutMode: 'masonry',
         masonry: {
           columnWidth: '.work',
           gutter: '.grid-gutter'
         }
-    });
+    };
 
-    // filters
-    $('.filter').click(function(){
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-    return false
-    });
+    if ($('#wrapper').attr('data-filter') != null) {
+      options.filter = $('#wrapper').attr('data-filter');
+    }
+
+    var $container = $('#wrapper').isotope(options);
 
     // sorting
     $('#wrapper').isotope({
@@ -103,21 +115,59 @@ $(window).load(function() {
     $('#wrapper')
         .isotope('updateSortData')
         .isotope();
+});
 
-    //make educational images masonry
-    $(function(){
-      var $container = $('.container')
-          $items = $container.find('.edu-item');
+// filters
+$(document).on('click', '.filter', function(){
+  if ($('#wrapper').length == 0) {
+    return true;
+  }
 
-      // trigger Isotope after images have loaded
-      $container.isotope({
-          itemSelector: '.edu-item',
-          layoutMode: 'masonry',
-          masonry: {
-            columnWidth: '.edu-item',
-            gutter: '.edu-gutter'
-          }
+  var selector = $(this).attr('data-filter');
+  $('#wrapper').isotope({
+      filter: selector,
+      animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+      }
+  });
+
+  $('#menu').slicknav('close');
+
+  if (History.enabled) {
+    History.replaceState(null, document.title, $(this).attr('href'));
+  }
+
+  return false;
+});
+
+
+// Isotope for work tempalte
+$(document).ready(function() {
+    if ($('.container').length == 0) {
+      return;
+    }
+
+    $('.container li img').each(function() {
+      $(this).closest('li').imagesLoaded(function(instance) {
+        $(instance.elements).addClass('is-loaded');
+        $('.container').isotope('layout');
       });
     });
 
+    // init Isotope
+    $('.container').isotope({
+        itemSelector: '.edu-item',
+        layoutMode: 'masonry',
+        masonry: {
+          columnWidth: '.edu-item',
+          gutter: '.edu-gutter'
+        }
+    });
+
+    // $('.container')
+    //     .isotope('updateSortData')
+    //     .isotope();
 });
+

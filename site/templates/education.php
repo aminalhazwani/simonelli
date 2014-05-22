@@ -8,9 +8,9 @@
       <ul class="container">
         <?php foreach($page->images() as $image): ?>
         <li>
-          <img class="edu-item" src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
-          <div class="edu-gutter"></div>
+          <img class="edu-item" src="http://deelay.me/1000/<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
         </li>
+        <div class="edu-gutter"></div>
         <?php endforeach ?>
       </ul>
     <?php endif ?>
