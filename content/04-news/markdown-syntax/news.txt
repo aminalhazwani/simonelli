@@ -1,0 +1,66 @@
+Title: Markdown Syntax Cheatsheet
+
+----
+
+Date: 23.05.2014
+
+----
+
+Category: news
+
+----
+
+Text: 
+
+In this short article I will explain you how to use markdown syntax when creating a new project page, news or in the case you need to change infos in your about page.
+
+In order to insert a title you have to type just ```#Title of a project```
+and it will be automatically translated in a ```h1``` like this:
+#Title of a project
+</br>
+If you would like to add a smaller title like a ```h2``` or a ```h1``` you just have to type ```##Smaller title for a project``` or ```###Even smaller title``` to produce this: 
+##Smaller title for a project 
+</br>
+###Even smaller title
+</br>
+
+To highlight some text you can write in bold by putting your text between double " * " like this ```**I am a bold text**``` and it will be traslated like this **I am a bold text**.
+
+You can also higlight text in italic and to do that you need to put your words between one " * " like this ```I am italic``` and it will be visualized like this *I am italic*.
+*italic*
+
+To insert a link you place your link text between square parentesis and your link between round parentesis as in the example ```[Link text](#)```.
+You will see il like this [Link text](#).
+
+If you want to insert a list you can use numbers or " * ".
+
+```1. item```
+```2. item```
+```3. item```
+
+1. item
+2. item
+3. item
+
+or
+
+```* item```
+```* item```
+```* item```
+
+* item
+* item
+* item
+
+
+You can also insert quotes in your text. In order to do that just put " > " before your quote
+
+```> ##“The best way to accomplish serious design … is to be totally and completely unqualified for the job.”```
+```— Paula Scher```
+
+> ##“The best way to accomplish serious design … is to be totally and completely unqualified for the job.”
+> — Paula Scher
+
+----
+
+Tags: markdown,syntax,cheat sheet

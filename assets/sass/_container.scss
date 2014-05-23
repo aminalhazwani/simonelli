@@ -67,8 +67,10 @@ body {
           @include opacity(1.0);
         }
       }
+      }
     }
-
+    &.news-text{
+      margin-bottom: 10em;
     }
   }
 }

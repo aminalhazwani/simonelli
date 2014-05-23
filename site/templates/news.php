@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 	<h1 class="title"><?php echo $page->title() ?></h1>
-	<article>
+	<article class="news-text">
 			<?php echo markdown($page->text()) ?>
 
 			<?php if($page->hasImages()): ?> 
@@ -39,14 +39,8 @@
 		<section>
 				<h3>Share</h3>
 				<ul>
-					<li><a href="
-							mailto:
-							?subject=<?php echo $page->title() ?> – <?php echo $site->title() ?>
-							&body=<?php echo $page->title() ?>%0A%0A
-							<?php echo $page->date('l j F Y') ?>%0A%0A
-							<?php echo $page->text() ?>%0A%0A
-							source: <?php echo $page->url() ?>
-							">Mail
+					<li><a href="mailto:?subject=<?php echo $page->title() ?> – <?php echo $site->title() ?>
+							&body=source: <?php echo $page->url() ?>">Mail
 						</a>
 					</li>
 					<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page->url() ?>" target="_blank">Facebook</a></li>
