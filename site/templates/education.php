@@ -5,9 +5,9 @@
     <?php echo markdown($page->text()) ?>
 
     <?php if($page->hasImages()): ?>
-      <ul class="container">
+      <ul class="container ul-list">
         <?php foreach($page->images() as $image): ?>
-        <li>
+        <li class="li-list">
           <img class="edu-item" src="http://deelay.me/1000/<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
         </li>
         <div class="edu-gutter"></div>

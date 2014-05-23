@@ -3,10 +3,10 @@
 	<h1 class="title"><?php echo $page->title() ?></h1>
 
 	<article>
-		<ul>
+		<ul class="ul-list">
 		<?php foreach($page->children()->visible()->flip()->limit(5) as $article): ?>
 			<a href="<?php echo $article->url() ?>">
-				<li>
+				<li class="li-list">
 					<p><?php echo $article->date('l j F Y') ?></p>
 					<h2><?php echo html($article->title()) ?></h2>
 					<p><?php echo excerpt($article->text(), 400) ?></p>

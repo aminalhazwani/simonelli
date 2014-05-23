@@ -32,12 +32,17 @@ body {
   article{
     margin-top: 1.2em;
     @media only screen and (min-width: 768px){
-
     }
-    ul li{
-      margin-bottom: 2em;
-      &:last-child{
-        margin-bottom: 0;
+    ul.ul-list {
+      margin: 0;
+      list-style-type: none;
+      padding: 0;
+      li.li-list{
+        margin: 0 0 2em 0;
+        list-style-type: none;
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
     img{
@@ -116,14 +121,6 @@ aside{
 
 /* Content */
 article{
-  h3{
-    color: $red;
-    margin: 0;
-  }
-  h2{
-    color: $red;
-    margin: 0 0 0.25em 0;
-  }
   p{
     margin: 0 0 1.5em;
     @media only screen and (max-width: 768px){
@@ -141,6 +138,42 @@ article{
       margin: 0 0 0.25em;
     }
   }
+  // Markdown syntax style
+  h1{
+    margin: 0 0 0.25em 0;
+    line-height: 1.1;
+  }
+  h2{
+    margin: 0 0 0.25em 0;
+    line-height: 1.25;
+  }
+  h3{
+    margin: 0;
+  }
+  a{
+    border-bottom: 1px solid $red;
+  }
+  ol{
+    padding: 0 0 0 3em;
+    ul{
+      li{
+        margin: 0;
+      }
+    }
+  }
+  ul{
+    padding-left: 3em;
+    margin: 1em 0;
+    li{
+      list-style-type: square;
+    }
+  }
+  blockquote{
+    border-left: 3px solid $red;
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+  //
   margin-bottom: 3em;
   @media only screen and (min-width: 768px){
     float: right;
@@ -153,6 +186,14 @@ article{
   }
   &.about-text{
     margin-bottom: 8em;
+    h3{
+    color: $red;
+    margin: 0;
+    }
+    h2{
+      color: $red;
+      margin: 0 0 0.25em 0;
+    }
   }
 }
 

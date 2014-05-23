@@ -5,9 +5,9 @@
 			<?php echo markdown($page->text()) ?>
 
 			<?php if($page->hasImages()): ?> 
-			<ul>
+			<ul class="ul-list">
 			  <?php foreach($page->images() as $image): ?>
-			  <li>
+			  <li class="li-list">
 			  	<img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" />
 			  </li>
 			  <?php endforeach ?>
