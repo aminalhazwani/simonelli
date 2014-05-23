@@ -1148,7 +1148,7 @@ body {
 }
 /* line 36, ../sass/_container.scss */
 .main article ul.ul-list {
-  margin: 0;
+  margin: 0 0 10em 0;
   list-style-type: none;
   padding: 0;
 }
@@ -1338,7 +1338,7 @@ article blockquote {
     margin-bottom: 0;
   }
   /* line 183, ../sass/_container.scss */
-  article ul {
+  article ul.ul-list {
     margin-bottom: 10em;
   }
 }

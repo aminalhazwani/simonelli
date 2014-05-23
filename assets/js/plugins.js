@@ -36,10 +36,10 @@ $(document).ready(function () {
         if ($(window).width() >= 768){
           $('aside').addClass("fixed");
           if ($('.fixed').height() + 38 + 112 > $(window).height()){
-            console.log("Sidebar is LONGER than browser height");
-            console.log($('.fixed').height() + 38 + 112);
-            console.log($(window).height());
-            console.log($(window).scrollTop());
+            //console.log("Sidebar is LONGER than browser height");
+            //console.log($('.fixed').height() + 38 + 112);
+            //console.log($(window).height());
+            //console.log($(window).scrollTop());
             if (($('.fixed').height() + 38 + 112 + 112 - $(window).height()) < $(window).scrollTop() ) {
                 //$('.fixed').css({ position: 'fixed', top: $(window).scrollTop() - ($('.fixed').height() - $(window).height()) });
                 $('.fixed').css({ position: 'fixed', bottom: 0, top: 'auto' });
@@ -49,7 +49,7 @@ $(document).ready(function () {
             }
           }
           else{
-            console.log("Sidebar is SHORTER than browser height");
+            //console.log("Sidebar is SHORTER than browser height");
               var stickyTop = $('.fixed').offset().top; // returns number 
               var windowTop = $(window).scrollTop(); // returns number
               if ( windowTop > 106) {

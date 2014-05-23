@@ -34,7 +34,7 @@ body {
     @media only screen and (min-width: 768px){
     }
     ul.ul-list {
-      margin: 0;
+      margin: 0 0 10em 0;
       list-style-type: none;
       padding: 0;
       li.li-list{
@@ -180,7 +180,7 @@ article{
     width: calc(100% - 270px);
     margin-left: 20px;
     margin-bottom: 0;
-    ul{
+    ul.ul-list{
       margin-bottom: 10em;
     }
   }
