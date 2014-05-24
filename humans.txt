@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Amin Al Hazwani -- Designer & Developer -- @aminalhazwani
+
+# THANKS
+
+    Daniel Rampanelli
+    Bastian Allgeier and the awesome Kirby CMS
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JS
+    Kirby CMS
+    Normalize.css, jQuery, Modernizr, HTML5 Boilerplate, Isotope.js, History.js, Imagesloaded.js
