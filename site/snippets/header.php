@@ -13,7 +13,12 @@
     <title><?php echo html($site->title()) ?> – <?php echo html($site->description()) ?></title>
     <?php endif ?>
 
-    <link rel="icon" type="image/png" href="<?php echo url() ?>/assets/images/favicon.png">
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="<?php echo url() ?>assets/images/favicon.png">
+    <link href="<?php echo url() ?>assets/images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="<?php echo url() ?>assets/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="<?php echo url() ?>assets/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="<?php echo url() ?>assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
     <?php if($page->text() != ''): ?>
     <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />
