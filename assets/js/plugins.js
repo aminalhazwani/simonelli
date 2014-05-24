@@ -61,9 +61,7 @@ $(document).ready(function () {
           }
         }
         else {
-          if ($('aside').hasClass("fixed")){
-            $('aside').removeClass("fixed");
-          } 
+            $('.fixed').css('position','static');
         }
       }
       $(document).ready(fixit);
