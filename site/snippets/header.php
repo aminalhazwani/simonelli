@@ -20,6 +20,9 @@
     <link href="<?php echo url() ?>assets/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
     <link href="<?php echo url() ?>assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
+    <link rel="author" href="<?php echo url() ?>humans.txt" />
+    <link rel="ROBOTS" href="<?php echo url() ?>robots.txt" />
+
     <?php if($page->text() != ''): ?>
     <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />
     <?php else: ?>
