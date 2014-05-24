@@ -31,6 +31,7 @@ $(document).ready(function () {
     });
 
     if ($('aside').length == 1) {
+      if ($('aside').height() < $('article').height()) {
       //fixed sidebar
       fixit = function(){
         if ($(window).width() >= 768){
@@ -80,7 +81,7 @@ $(document).ready(function () {
   $(document).ready(text);
   $(window).bind('resize', text);
   $(window).bind('scroll', text);
-        
+  }
 });
 
 

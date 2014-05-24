@@ -26,78 +26,162 @@ body {
 
 .main{
   width: 92%;
+
+  /* Content under header and above container*/
+  .intro{
+    margin-top: 5em;
+    @media only screen and (min-width: 960px){
+       margin: 6em 0 3em 270px;
+    }
+  }
+
+  .title{
+    margin: 3em 0 0;
+    color: $red;
+    line-height: 1.2;
+    @media only screen and (min-width: 768px){
+      margin: 4em 0 0 270px;
+    }
+  }
+
   #wrapper{
     margin-bottom: 5em;
   }
-  article{
-    margin-top: 1.2em;
-    @media only screen and (min-width: 768px){
-    }
-    ul.ul-list {
-      margin: 0 0 10em 0;
-      list-style-type: none;
-      padding: 0;
-      li.li-list{
-        margin: 0 0 2em 0;
-        list-style-type: none;
-        &:last-child{
-          margin-bottom: 0;
+      /* content */
+      article{
+        margin-top: 1.2em;
+        @media only screen and (min-width: 768px){
+          float: right;
+          width: calc(100% - 270px);
+          margin-left: 20px;
         }
-      }
-    }
-    img{
-      width: 100%;
-    }
-    .container{
-      li{
-        background-image: url('../images/loading.gif');
-        background-position: center;
-        background-repeat: no-repeat;
-        .edu-item{
-          width: 48%;
-          display: block;
-          margin-bottom: 1.5em;
-          @media only screen and (max-width: 480px){
-            width: 100%;
+
+        /* Responsive typography */
+        p{
+          margin: 0 0 1.5em;
+          @media only screen and (max-width: 768px){
+            font-size: 1.15em;
           }
-      }
-      &.is-loaded {
-        background-image: none !important;
-        img {
-          @include opacity(1.0);
+          @media only screen and (min-width: 960px){
+            font-size: 1.15em;
+          }
+          @media only screen and (max-width: 600px){
+            font-size: 1em;
+          }
+        }
+
+        /* News page */
+        &.news-text{
+          margin-bottom: 10em;
+          @media only screen and (max-width: 767px){
+            margin-bottom: 0;
+          }
+        }
+        ul li{
+          p{
+            margin: 0 0 0.25em 0;
+          }
+        }
+
+        /* About page */
+        &.about-text{
+          margin-bottom: 8em;
+          h3{
+            color: $red;
+            margin: 0;
+          }
+          h2{
+            color: $red;
+            margin: 0 0 0.25em 0;
+          }
+          @media only screen and (max-width: 767px){
+            margin-bottom: 0;
+          }
+        }
+
+        /* List of images */
+        img{
+          width: 100%;
+        }
+        ul.ul-list{
+          margin: 0 0 10em 0;
+          padding: 0;
+          list-style-type: none;
+          li.li-list{
+            margin: 0 0 2em 0;
+            list-style-type: none;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+          @media only screen and (max-width: 767px){
+            margin-bottom: 3em;
+          }
+          &.container{
+            @media only screen and (max-width: 767px){
+              margin-bottom: 1.5em;
+            }
+          }
+        }
+
+        .container{
+          /* List of images on edu page*/
+          img{
+            &.edu-item{
+              width: 48%;
+              display: block;
+              margin-bottom: 1.5em;
+              @media only screen and (max-width: 480px){
+                width: 100%;
+              }
+            }
+          }
+          .edu-gutter{
+            width: 4%;
+          }
+        }
+
+        /* Markdown syntax style */
+        h1{
+          margin: 0 0 0.25em 0;
+          line-height: 1.1;
+        }
+        h2{
+          margin: 0 0 0.25em 0;
+          line-height: 1.25;
+        }
+        h3{
+          margin: 0;
+        }
+        a{
+          border-bottom: 1px solid $red;
+        }
+        ol{
+          padding: 0 0 0 3em;
+          ul{
+            li{
+              margin: 0;
+            }
+          }
+        }
+        ul{
+          padding-left: 3em;
+          margin: 1em 0;
+          li{
+            list-style-type: square;
+          }
+        }
+        blockquote{
+          border-left: 3px solid $red;
+          margin: 1em 0;
+          padding-left: 2em;
         }
       }
-      }
-    }
-    &.news-text{
-      margin-bottom: 10em;
-    }
-  }
 }
 
-/* Content under header and above container*/
-.intro{
-  margin-top: 5em;
-  @media only screen and (min-width: 960px){
-     margin: 6em 0 3em 270px;
-  }
-}
-
-.title{
-  margin: 3em 0 0;
-  color: $red;
-  line-height: 1.2;
-  @media only screen and (min-width: 768px){
-    margin: 4em 0 0 270px;
-  }
-}
-
-/* Sidebar */
+/* sidebar */
 aside{
   margin-bottom: 7em;
-  &.contact{
-    margin-top: 5em;
-  }
   section{
     margin-bottom: 3em;
     p{
@@ -108,110 +192,22 @@ aside{
     color: $red;
     margin-bottom: 0;
   }
-  ul li{
-    border-bottom: 1px solid $red;
-    padding: 0.5em 0;
-    .date{
-      float: right;
+  ul{
+    li{
+      border-bottom: 1px solid $red;
+      padding: 0.5em 0;
+
+      /* Date on archive page*/
+      .date {
+        float: right;
+      }
     }
+  }
+  &.contact{
+    margin-top: 5em;
   }
   @media only screen and (min-width: 768px){
     float: left;
     width: 250px;
   }
-}
-
-/* Content */
-article{
-  p{
-    margin: 0 0 1.5em;
-    @media only screen and (max-width: 768px){
-      font-size: 1.15em;
-    }
-    @media only screen and (min-width: 960px){
-      font-size: 1.15em;
-    }
-    @media only screen and (max-width: 600px){
-      font-size: 1em;
-    }
-  }
-  ul li{
-    p{
-      margin: 0 0 0.25em;
-    }
-  }
-  // Markdown syntax style
-  h1{
-    margin: 0 0 0.25em 0;
-    line-height: 1.1;
-  }
-  h2{
-    margin: 0 0 0.25em 0;
-    line-height: 1.25;
-  }
-  h3{
-    margin: 0;
-  }
-  a{
-    border-bottom: 1px solid $red;
-  }
-  ol{
-    padding: 0 0 0 3em;
-    ul{
-      li{
-        margin: 0;
-      }
-    }
-  }
-  ul{
-    padding-left: 3em;
-    margin: 1em 0;
-    li{
-      list-style-type: square;
-    }
-  }
-  blockquote{
-    border-left: 3px solid $red;
-    margin: 1em 0;
-    padding-left: 2em;
-  }
-  //
-  margin-bottom: 3em;
-  @media only screen and (min-width: 768px){
-    float: right;
-    width: calc(100% - 270px);
-    margin-left: 20px;
-    margin-bottom: 0;
-    ul.ul-list{
-      margin-bottom: 10em;
-    }
-  }
-  &.about-text{
-    margin-bottom: 8em;
-    h3{
-    color: $red;
-    margin: 0;
-    }
-    h2{
-      color: $red;
-      margin: 0 0 0.25em 0;
-    }
-  }
-}
-
-.item{
-  a:hover{
-    color: $blue;
-  }
-}
-
-.grid-gutter{
-  width: 2%;
-  @media only screen and (max-width: 960px) {
-    width: 4%;
-  }
-}
-
-.edu-gutter{
-  width: 4%;
 }

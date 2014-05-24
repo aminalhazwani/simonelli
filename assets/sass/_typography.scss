@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.item{
+  a:hover{
+    color: $blue;
+  }
+}
+
 /* News item */
 .news{
 	margin: 0 0 2em 0;
@@ -19,6 +25,10 @@
 		&:hover{
 			background-color: $blue;
 		}
+	}
+	h3{
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 	h3, p, data{
 		color: #fff;
@@ -125,10 +135,16 @@
 
 		&.is-loaded {
 			background-image: none;
-
 			img {
 				@include opacity(1.0);
 			}
 		}
 	}
+}
+
+.grid-gutter{
+  width: 2%;
+  @media only screen and (max-width: 960px) {
+    width: 4%;
+  }
 }
