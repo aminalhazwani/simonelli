@@ -1,4 +1,4 @@
-<?php foreach($pages->find('/online')->children()->visible() as $article): ?>
+<?php foreach($pages->find('/online')->children()->visible()->limit(5) as $article): ?>
 	<ul>
 		<a href="<?php echo $article->link() ?>" target="_blank">
 			<li>

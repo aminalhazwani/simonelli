@@ -1,4 +1,4 @@
-<?php foreach($pages->find('/press')->children()->visible() as $article): ?>
+<?php foreach($pages->find('/press')->children()->visible()->limit(5) as $article): ?>
 	<ul>
 		<a href="<?php echo $article->url() ?>">
 			<li>
