@@ -984,7 +984,13 @@ a.e-mail {
 
 /* line 145, ../sass/_typography.scss */
 .grid-gutter {
-  width: 2%;
+  width: 4%;
+}
+@media only screen and (min-width: 960px) {
+  /* line 145, ../sass/_typography.scss */
+  .grid-gutter {
+    width: 2%;
+  }
 }
 
 /* Fixed elements */
