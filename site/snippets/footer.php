@@ -7,7 +7,7 @@
             <div class="footer-mini">
                 <div class="wrapper">
                     <p>© 2014 All Rights Reserved.</p>
-                    <span><a href="<?php echo url() ?>news/impressum">Imprint</a> | <a href="http://aminalhazwani.github.io/" target="_blank">Made with &#9829;</a></span>
+                    <span><a href="<?php echo url() ?>news/imprint">Imprint</a> | <a href="http://aminalhazwani.github.io/" target="_blank">Made with &#9829;</a></span>
                 </div>
             </div>
     	</div>
