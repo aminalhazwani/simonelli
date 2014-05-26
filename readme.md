@@ -19,8 +19,11 @@ HTML5, CSS3, JS
 
 ###Software
 Content is managed with Kirby CMS
+
 Code is written in Sublime Text 2
-Development envoirment with Vagrant
+
+Local development environment with Vagrant
+
 Code is hosted on GitHub
 
 ##View Live
