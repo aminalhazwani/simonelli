@@ -30,7 +30,7 @@
 
 		<section>
 			<h3>Interships</h3>
-			<p>Looking for an intership? <a class="e-mail" href="mailto:<?php echo $page->mailintern() ?>?subject=I would like to apply for an intership">Apply now!</a></p>
+			<p>Write <a class="e-mail" href="mailto:<?php echo $page->mailintern() ?>?subject=I would like to apply for an intership">here</a>!</p>
 		</section>
 
 		<section>

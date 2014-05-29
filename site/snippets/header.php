@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
     <?php if($page->title() != ''): ?>
     <title><?php echo html($site->title()) ?> – <?php echo html($page->title()) ?></title>
@@ -21,7 +21,6 @@
     <link href="<?php echo url() ?>assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
     <link rel="author" href="<?php echo url() ?>humans.txt" />
-    <link rel="ROBOTS" href="<?php echo url() ?>robots.txt" />
 
     <?php if($page->text() != ''): ?>
     <meta name="description" content="<?php echo excerpt($page->text(), 200) ?>" />

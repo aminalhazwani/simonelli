@@ -118,7 +118,7 @@ $(document).ready(function() {
     $('#wrapper').isotope({
         getSortData: {
             date: function (elem) {
-                return Date.parse($(elem).find('.date').attr('date-time'));
+                return Date.parse($(elem).find('.date').attr('value'));
             }
         },
         sortAscending: false,

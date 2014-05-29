@@ -5,7 +5,7 @@
 
 		<a href="<?php echo $news->url() ?>">
 
-			<data class="date" date-time="<?php echo $news->date('c') ?>"><?php echo $news->date('l j F Y') ?></data>
+			<data class="date" value="<?php echo $news->date('c') ?>"><?php echo $news->date('l j F Y') ?></data>
 			<h3><?php echo html($news->title()) ?></h3>
 			<p><?php echo excerpt($news->text(), 100) ?></p>
 

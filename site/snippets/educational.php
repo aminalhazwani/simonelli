@@ -9,7 +9,7 @@
 			<div class="meta">
 		    	<h3><?php echo html($educational->title()) ?></h3>
 		     	<span><?php echo html($educational->manufacter()) ?></span>,
-		    	<data class="date" date-time="<?php echo $educational->date('c') ?>"><?php echo $educational->date('Y') ?></data>
+		    	<data class="date" value="<?php echo $educational->date('c') ?>"><?php echo $educational->date('Y') ?></data>
 		    </div>
 
 		    <figure>
