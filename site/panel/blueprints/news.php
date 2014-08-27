@@ -22,11 +22,12 @@ fields:
       news: news
     dafault: news
     required: true
-  text: 
-    label: Text
-    type:  textarea
-    size:  large
   tags: 
     label: Tags
     type:  tags
     index: all
+  text: 
+    label: Text
+    type:  textarea
+    size:  large
+    buttons: true
