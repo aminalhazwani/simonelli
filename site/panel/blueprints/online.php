@@ -3,7 +3,8 @@
 # online blueprint
 
 title: Page
-pages: true
+pages: 
+  template: online
 files: false
 fields:
   title: 

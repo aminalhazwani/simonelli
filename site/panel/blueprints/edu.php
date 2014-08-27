@@ -3,5 +3,6 @@
 # edu blueprint
 
 title: Edu
-pages: true
+pages: 
+    template: education
 files: true

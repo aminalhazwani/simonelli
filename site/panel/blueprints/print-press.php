@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# archive blueprint
+# Online Press blueprint
 
 title: Page
 pages: 
-    template: news
-files: true
+    template: press
+files: false

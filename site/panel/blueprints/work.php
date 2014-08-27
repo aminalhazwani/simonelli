@@ -3,5 +3,6 @@
 # work blueprint
 
 title: Work
-pages: true
+pages: 
+    template: project
 files: true
