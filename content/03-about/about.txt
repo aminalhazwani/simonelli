@@ -1,4 +1,4 @@
-Title: About
+﻿Title: About
 
 ----
 
@@ -26,11 +26,7 @@ State: Italia
 
 ----
 
-Clients: 
-
-----
-
-Text: ### What I am 
+Text: ### What I am
 Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
 
 ### What I do
