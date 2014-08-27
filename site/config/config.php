@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://simonelli.home.dev/');
+c::set('url', '/');
 
 
 /* 
@@ -71,7 +71,7 @@ RewriteBase /subfolder
  
 */
 
-c::set('subfolder', false);
+c::set('subfolder', 'simonelli');
 
 
 /* 
