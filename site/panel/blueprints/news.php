@@ -15,6 +15,11 @@ fields:
     type: date
     format: dd.mm.yy
     required: true
+  positiondate:
+    label: Date for positioning
+    type: date
+    format: dd.mm.yy
+    required: true
   category:
     label: Branch
     type: select
